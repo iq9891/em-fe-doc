@@ -4,7 +4,7 @@
     <p class="home-info">一套基于 Vue.js 企业级定制 UI 组件库</p>
     <ul class="home-link-list">
       <li class="home-link-item">
-        <router-link class="home-link" :to="{}">快速开始</router-link>
+        <router-link class="home-link" :to="{ name: 'Start' }">快速开始</router-link>
       </li>
       <li class="home-link-item">
         <router-link class="home-link" :to="{}">组件</router-link>
@@ -20,11 +20,7 @@
     </ul>
   </div>
 </template>
-<script>
-export default {
-  name: 'home',
-};
-</script>
+
 <style lang="scss">
 @import "../assets/styles/views/home.scss";
 </style>

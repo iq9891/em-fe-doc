@@ -1,0 +1,14 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.button {
+  color: $background-color-write;
+  background-color: $brand-color-default;
+  line-height: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Microsoft YaHei', 'PingFangSC', 'Helvetica', sans-serif, 'Arial';
+}

@@ -18,6 +18,11 @@ const VueRouter = new Router({
       name: 'Home',
       component: loadcomponents.load('Home', 'views'),
     },
+    {
+      path: '/start',
+      name: 'Start',
+      component: loadcomponents.load('Start', 'views'),
+    },
   ],
 });
 
