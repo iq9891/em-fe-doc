@@ -1,6 +1,6 @@
 # em-fe-doc
 
-> 一个 Vue.js 项目
+> em-fe 官网
 
 ## 需要的环境
 
