@@ -1,0 +1,44 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.dmenu {
+  width: 20%;
+
+  &-search {
+    width: 80%;
+    margin: 16px auto;
+    display: block;
+  }
+
+  &-content {
+    width: 80%;
+    height: calc(100% - 66px);
+    margin: 0 auto;
+    padding: 0 8px;
+    overflow: auto;
+  }
+
+  &-dt {
+    font-size: 16px;
+    padding: 8px 0 4px;
+    line-height: $line-height;
+  }
+
+  &-dd {
+    font-size: 14px;
+    line-height: $line-height;
+    padding: 4px 8px;
+  }
+
+  &-link {
+    &-box {
+      font-size: 14px;
+      line-height: $line-height;
+      padding: 8px 0;
+    }
+
+    &.router-link-exact-active {
+      border-bottom: 2px solid $brand-color-default;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.code {
+  font-size: 12px;
+  line-height: $line-height;
+  background: $background-code;
+  display: block;
+  overflow-x: auto;
+  color: $text-color-default;
+  padding: 32px 16px 16px !important;
+  text-size-adjust: none;
+
+  &-inline {
+    background: $background-code;
+    padding: 4px 8px;
+  }
+
+  &-tag {
+    color: $brand-color-default;
+  }
+
+  &-attr {
+    color: $brand-color-default;
+  }
+}

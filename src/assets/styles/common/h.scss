@@ -1,0 +1,19 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.h2 {
+  font-size: 28px;
+  color: $text-color-default;
+}
+
+.h3 {
+  font-size: 22px;
+  color: $text-color-default;
+  margin-top: 64px;
+}
+
+.h4 {
+  font-size: 18px;
+  margin-top: 64px;
+  color: $text-color-default;
+}

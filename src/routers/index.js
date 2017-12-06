@@ -3,16 +3,19 @@ import Router from 'vue-router';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import loadcomponents from '@/tools/loadcomponents';
-
-//进度条配置
-NProgress.configure({
-  // showSpinner: false,
-});
+// 分模块的路由
+import doc from './doc';
 
 Vue.use(Router);
 
 const VueRouter = new Router({
   routes: [
+    {
+      path: '/doc',
+      name: 'Doc',
+      children: doc,
+      component: loadcomponents.load('Doc', 'views'),
+    },
     {
       path: '/',
       name: 'Home',
