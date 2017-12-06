@@ -1897,11 +1897,28 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+em-cookie@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/em-cookie/-/em-cookie-1.0.6.tgz#bbc77f85f83402b9452f728e04d8490d38c99c62"
+
+em-fe@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/em-fe/-/em-fe-1.2.1.tgz#b908bcc3b3abc268bfe5a18b52496ec14b007351"
+  dependencies:
+    babel-plugin-dynamic-import-webpack "^1.0.1"
+    em-cookie "^1.0.6"
+    em-jsonp "^1.0.4"
+    em-underline "^1.0.10"
+
+em-jsonp@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/em-jsonp/-/em-jsonp-1.0.4.tgz#589d25b3079730e64faf225cf5336eae8aa72e0c"
+
 em-normalize@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/em-normalize/-/em-normalize-1.0.2.tgz#fc12f05697d1c747f78f6670a66b4fcb63968435"
 
-em-underline@^1.0.9:
+em-underline@^1.0.10, em-underline@^1.0.9:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/em-underline/-/em-underline-1.1.0.tgz#991fb4d1734cee7643a54dc3e31d6aabf33b7a81"
 

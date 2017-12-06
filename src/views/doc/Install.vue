@@ -1,5 +1,5 @@
 <template>
-  <article class="start">
+  <article>
     <h2 class="h2">安装</h2>
     <p class="p">本节将介绍如何在项目中使用 EM-FE</p>
     <h3 class="h3">使用 vue-cli</h3>
@@ -36,14 +36,8 @@ export default {
       cdn,
     };
   },
-  mounted() {
-  },
   components: {
     dCode: loadcomponents.load('Dcode'),
   },
 };
 </script>
-
-<style lang="scss">
-@import "../../assets/styles/views/doc/start.scss";
-</style>
