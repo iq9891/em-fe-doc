@@ -1,0 +1,100 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.color {
+  &-row {
+    padding: 24px 0 0;
+  }
+
+  &-title {
+    font-size: 16px;
+    line-height: $line-height;
+  }
+
+  &-desc {
+    font-size: 14px;
+    line-height: $line-height;
+  }
+
+  &-common {
+    padding: 16px;
+    color: $background-color-write;
+  }
+
+  &-brand {
+    &-default {
+      background: $brand-color-default;
+    }
+
+    &-hover {
+      background: $brand-color-hover;
+    }
+
+    &-focus {
+      background: $brand-color-click;
+    }
+
+    &-active {
+      background: $brand-color-select;
+      color: $text-color-default;
+    }
+  }
+
+  &-auxiliary {
+    &-warning {
+      background: $auxiliary-color-warning;
+    }
+
+    &-success {
+      background: $auxiliary-color-success;
+    }
+
+    &-danger {
+      background: $auxiliary-color-danger;
+    }
+
+    &-info {
+      background: $brand-color-default;
+    }
+  }
+
+  &-font {
+    &-text {
+      background: $text-color-default;
+    }
+
+    &-menu {
+      background: $menu-text-color;
+    }
+
+    &-bar {
+      background: $bar-text-color;
+    }
+
+    &-prompt {
+      background: $text-color-prompt;
+    }
+
+    &-disable {
+      background: $text-color-disable;
+    }
+
+    &-tag {
+      &-checkout {
+        background: $brand-color-default;
+
+        &-active {
+          background: $text-color-tag;
+        }
+      }
+    }
+
+    &-write {
+      @include border();
+
+      padding: 15px;
+      background: $background-color-write;
+      color: $text-color-default;
+    }
+  }
+}

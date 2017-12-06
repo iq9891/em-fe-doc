@@ -4,9 +4,6 @@ $screen-md: 992px;
 $screen-lg: 1200px;
 $screen-xl: 1600px;
 
-// 一级菜单宽度，大屏小屏
-$menu-md-width: 155px;
-$menu-sm-width: 65px;
 // 圆角尺寸
 $radius-size: 4px;
 // 最小宽度尺寸
@@ -15,9 +12,6 @@ $min-width: 1024px;
 $sp-width: 1366px;
 // 统一行高
 $line-height: 1.5;
-
-//遮罩层的颜色
-$mask-color: rgba(0, 0, 0, 0.3);
 
 // 阴影的颜色
 $shadow-color: rgba(0, 0, 0, 0.1);
@@ -73,19 +67,18 @@ $background-color-even: #fefefe;
 $text-color-default: #333;
 
 //文字色 一级、二级展开
-$text-color-Three: #454545;
+$menu-text-color: #454545;
 
 //文字色 三级展开
-$text-color-Three: #666;
+$bar-text-color: #666;
 
 //文字色 禁用
 $text-color-disable: #d8d8d8;
 
 //文字色 列表字段、输入框默认、提示文字默认
 $text-color-prompt: #999;
-
-//文字色 复选标签 / 线框色 复选标签 / 复选标签色 选中文字
-$text-color-checkout: #ecb55d;
+//标签多选文字色
+$text-color-tag: #ecb55d;
 
 //线框色 全局提示
 $border-color-prompt: #9dd1fe;
