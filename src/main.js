@@ -1,4 +1,8 @@
 import Vue from 'vue';
+// 引入 EM-FE js
+import emfe from 'em-fe';
+// 引入 EM-FE 样式
+import 'em-fe/dist/css/emfe.css';
 
 import store from '@/stores';
 
@@ -6,6 +10,8 @@ import App from './App';
 import router from './routers';
 
 Vue.config.productionTip = false;
+
+Vue.use(emfe);
 
 /* eslint-disable no-new */
 new Vue({

@@ -36,8 +36,6 @@ export default {
       cdn,
     };
   },
-  mounted() {
-  },
   components: {
     dCode: loadcomponents.load('Dcode'),
   },
