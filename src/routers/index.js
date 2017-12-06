@@ -14,7 +14,7 @@ Vue.use(Router);
 const VueRouter = new Router({
   routes: [
     {
-      path: 'doc',
+      path: '/doc',
       name: 'Doc',
       children: [
         {
