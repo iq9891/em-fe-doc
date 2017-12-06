@@ -14,7 +14,7 @@ function resolve (dir) {
 module.exports = {
   cache: true,
   entry: {
-    vendor: ['vue', 'vuex', 'vue-router', 'nprogress'],
+    vendor: ['vue', 'vuex', 'vue-router', 'nprogress', 'clipboard', 'highlightjs'],
     app: './src/main.js'
   },
   output: {

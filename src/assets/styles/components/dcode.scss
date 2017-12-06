@@ -9,6 +9,13 @@
     right: 8px;
     top: 8px;
     font-size: 12px;
+    font-size: 0;
+
+    &-item {
+      display: inline-block;
+      font-size: 12px;
+      margin: 0 4px;
+    }
   }
 
   &-type {

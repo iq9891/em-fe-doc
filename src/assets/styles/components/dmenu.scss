@@ -20,7 +20,7 @@
 
   &-dt {
     font-size: 16px;
-    padding: 4px 0;
+    padding: 8px 0 4px;
     line-height: $line-height;
   }
 
@@ -31,6 +31,12 @@
   }
 
   &-link {
+    &-box {
+      font-size: 14px;
+      line-height: $line-height;
+      padding: 8px 0;
+    }
+
     &.router-link-exact-active {
       border-bottom: 2px solid $brand-color-default;
     }

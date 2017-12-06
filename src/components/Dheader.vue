@@ -5,7 +5,7 @@
     </h1>
     <div class="dheader-list">
       <router-link class="link dheader-btn" :to="{ name: 'Start' }">快速开始</router-link>
-      <router-link class="link dheader-btn" :to="{ name: 'Home' }">组件</router-link>
+      <router-link class="link dheader-btn" :to="{ name: 'Install' }">组件</router-link>
     </div>
   </header>
 </template>
