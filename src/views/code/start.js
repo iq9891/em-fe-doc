@@ -1,0 +1,10 @@
+const cli = `
+$ npm i -g vue-cli
+$ mkdir my-project && cd my-project
+$ vue init webpack
+$ npm i && npm i element-ui
+`;
+
+export default {
+  cli,
+};
