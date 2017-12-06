@@ -14,14 +14,21 @@ Vue.use(Router);
 const VueRouter = new Router({
   routes: [
     {
+      path: 'doc',
+      name: 'Doc',
+      children: [
+        {
+          path: 'start',
+          name: 'Start',
+          component: loadcomponents.load('Start', 'views', '/doc'),
+        },
+      ],
+      component: loadcomponents.load('Doc', 'views'),
+    },
+    {
       path: '/',
       name: 'Home',
       component: loadcomponents.load('Home', 'views'),
-    },
-    {
-      path: '/start',
-      name: 'Start',
-      component: loadcomponents.load('Start', 'views'),
     },
   ],
 });

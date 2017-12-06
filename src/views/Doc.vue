@@ -1,8 +1,12 @@
 <template>
-  <div id="app" class="app" v-cloak>
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
+  <div class="doc" v-cloak>
+    <d-header></d-header>
+    <div class="doc-wrap">
+      <d-menu></d-menu>
+      <keep-alive>
+        <router-view class="doc-view"></router-view>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
@@ -18,5 +22,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/styles/base.scss";
+@import "../assets/styles/views/doc.scss";
 </style>

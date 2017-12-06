@@ -35,16 +35,5 @@ body {
 
 .app {
   height: 100%;
-
-  &-wrap {
-    display: flex;
-    height: calc(100% - 65px);
-  }
-
-  &-view {
-    width: 80%;
-    box-shadow: inset 4px 4px 8px $shadow-color;
-    padding: 32px;
-    overflow: auto;
-  }
+  width: 100%;
 }

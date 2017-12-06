@@ -109,5 +109,5 @@
 </template>
 
 <style lang="scss">
-@import "../assets/styles/views/start.scss";
+@import "../../assets/styles/views/doc/start.scss";
 </style>
