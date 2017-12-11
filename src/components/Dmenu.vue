@@ -10,26 +10,33 @@
       </div>
       <h2 class="dmenu-h2">设计规范</h2>
       <ul class="dmenu-ul">
-        <li class="dmenu-li">
-          <router-link class="link dmenu-link" :to="{ name: 'Color' }">色彩</router-link>
-        </li>
-        <li class="dmenu-li">
-          <router-link class="link dmenu-link" :to="{ name: 'Font' }">字体</router-link>
+        <li class="dmenu-li" v-for="ui in uis">
+          <router-link class="link dmenu-link" :to="ui.router">{{ ui.title }}</router-link>
         </li>
       </ul>
       <h2 class="dmenu-h2">组件</h2>
       <dl class="dmenu-dl">
         <dt class="dmenu-dt">Base</dt>
-        <dd class="dmenu-dd">
-          <router-link class="link dmenu-link" :to="{ name: 'Start' }">快速开始</router-link>
-        </dd>
-        <dd class="dmenu-dd">
-          <router-link class="link dmenu-link" :to="{ name: 'Install' }">安装</router-link>
+        <dd class="dmenu-dd" v-for="cpt in cpts.base">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
     </div>
   </div>
 </template>
+<script>
+import uis from './menus/ui';
+import cpts from './menus/cpt';
+
+export default {
+  data() {
+    return {
+      uis,
+      cpts,
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 @import "../assets/styles/components/dmenu.scss";

@@ -57,7 +57,7 @@
       </emfe-col>
     </emfe-row>
     <h4 class="h4 color-h4">文字色 font</h4>
-    <h5 class="h5 color-h5">全局</h5>
+    <h5 class="h5">全局</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-font-text">
@@ -108,7 +108,7 @@
         </div>
       </emfe-col>
     </emfe-row>
-    <h5 class="h5 color-h5">图标</h5>
+    <h5 class="h5">图标</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-icon-default">
@@ -129,7 +129,7 @@
         </div>
       </emfe-col>
     </emfe-row>
-    <h5 class="h5 color-h5">复选标签</h5>
+    <h5 class="h5">复选标签</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-font-tag-default">
@@ -157,7 +157,7 @@
       </emfe-col>
     </emfe-row>
     <h4 class="h4 color-h4">背景色</h4>
-    <h5 class="h5 color-h5">全局</h5>
+    <h5 class="h5">全局</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-bg-title">
@@ -172,7 +172,7 @@
         </div>
       </emfe-col>
     </emfe-row>
-    <h5 class="h5 color-h5">切换标签</h5>
+    <h5 class="h5">切换标签</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-bg-tag-default">
@@ -193,7 +193,7 @@
         </div>
       </emfe-col>
     </emfe-row>
-    <h5 class="h5 color-h5">筛选标签</h5>
+    <h5 class="h5">筛选标签</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-bg-tag-default">
@@ -215,7 +215,7 @@
       </emfe-col>
     </emfe-row>
     <h4 class="h4 color-h4">线框颜色</h4>
-    <h5 class="h5 color-h5">全局</h5>
+    <h5 class="h5">全局</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-border-btn-default">
@@ -224,7 +224,7 @@
         </div>
       </emfe-col>
     </emfe-row>
-    <h5 class="h5 color-h5">按钮</h5>
+    <h5 class="h5">按钮</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-border-btn-default">

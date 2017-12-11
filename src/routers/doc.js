@@ -21,4 +21,9 @@ export default [
     name: 'Font',
     component: loadcomponents.load('Font', 'views', '/doc'),
   },
+  {
+    path: 'icon',
+    name: 'Icon',
+    component: loadcomponents.load('Icon', 'views', '/doc'),
+  },
 ];
