@@ -109,6 +109,26 @@
       background: $background-color-write;
       color: $text-color-default;
     }
+
+    &-tag {
+      &-default {
+        background: $brand-color-default;
+      }
+
+      &-hover {
+        background: $brand-color-hover;
+      }
+
+      &-active {
+        &-default {
+          background: $text-color-tag;
+        }
+
+        &-hover {
+          background: $checkout-color-hovered;
+        }
+      }
+    }
   }
 
   &-bg {
@@ -135,6 +155,11 @@
 
       &-selected {
         background: $switch-color-selected;
+
+        &2 {
+          background: $checkout-color-checked;
+          color: $text-color-default;
+        }
       }
     }
   }
@@ -153,6 +178,21 @@
       &-focus {
         background: $brand-color-click;
       }
+    }
+  }
+
+  &-icon {
+    &-default {
+      background: $text-color-disable;
+      color: $text-color-default;
+    }
+
+    &-brand {
+      background: $brand-color-default;
+    }
+
+    &-success {
+      background: $auxiliary-color-success;
     }
   }
 }

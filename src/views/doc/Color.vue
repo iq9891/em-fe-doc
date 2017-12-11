@@ -1,9 +1,7 @@
 <template>
   <article class="color">
     <h2 class="h2">色彩</h2>
-    <p class="p">本节将介绍如何在项目中， EM-FE 遵循的色彩规范</p>
-    <h3 class="h3">概述</h3>
-    <p class="p">EM-FE 推荐使用以下调色板的颜色作为设计和开发规范，以保证页面和组件之间的视觉一致。</p>
+    <p class="p">本节将介绍如何在项目中， EM-FE 遵循的色彩规范。EM-FE 推荐使用以下调色板的颜色作为设计和开发规范，以保证页面和组件之间的视觉一致。</p>
     <h4 class="h4">品牌色 brand</h4>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
@@ -59,6 +57,7 @@
       </emfe-col>
     </emfe-row>
     <h4 class="h4 color-h4">文字色 font</h4>
+    <h5 class="h5 color-h5">全局</h5>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-font-text">
@@ -109,6 +108,54 @@
         </div>
       </emfe-col>
     </emfe-row>
+    <h5 class="h5 color-h5">图标</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-icon-default">
+          <h5 class="color-title">默认图标</h5>
+          <p class="color-desc">#8d8d8d</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-icon-brand">
+          <h5 class="color-title">有色图标</h5>
+          <p class="color-desc">#1996f9</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-icon-success">
+          <h5 class="color-title">有色图标</h5>
+          <p class="color-desc">#4cbd63</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
+    <h5 class="h5 color-h5">复选标签</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-tag-default">
+          <h5 class="color-title">默认</h5>
+          <p class="color-desc">#1996f9</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-tag-hover">
+          <h5 class="color-title">悬停</h5>
+          <p class="color-desc">#50affa</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-tag-active-default">
+          <h5 class="color-title">选中默认</h5>
+          <p class="color-desc">#ecb55d</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-tag-active-hover">
+          <h5 class="color-title">选中悬停</h5>
+          <p class="color-desc">#f1cb8d</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
     <h4 class="h4 color-h4">背景色</h4>
     <h5 class="h5 color-h5">全局</h5>
     <emfe-row :gutter="16" className="color">
@@ -146,6 +193,27 @@
         </div>
       </emfe-col>
     </emfe-row>
+    <h5 class="h5 color-h5">筛选标签</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-tag-default">
+          <h5 class="color-title">默认</h5>
+          <p class="color-desc">#dfe3e6</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-tag-hover">
+          <h5 class="color-title">悬停</h5>
+          <p class="color-desc">#e8ebed</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-tag-selected2">
+          <h5 class="color-title">选中</h5>
+          <p class="color-desc">#fffcf7</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
     <h4 class="h4 color-h4">线框颜色</h4>
     <h5 class="h5 color-h5">全局</h5>
     <emfe-row :gutter="16" className="color">
@@ -177,8 +245,6 @@
         </div>
       </emfe-col>
     </emfe-row>
-    <h4 class="h4 color-h4">标签</h4>
-
   </article>
 </template>
 
