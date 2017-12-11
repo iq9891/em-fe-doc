@@ -1,0 +1,45 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.font {
+  &-row {
+    padding: 24px 0 0;
+  }
+
+  &-title {
+    font-size: 40px;
+    line-height: $line-height;
+    padding: 48px 16px;
+
+    &-yahei {
+      font-family: 'Microsoft YaHei';
+    }
+
+    &-pingfangsc {
+      font-family: 'PingFangSC';
+    }
+
+    &-helvetica {
+      font-family: 'Helvetica';
+    }
+
+    &-arial {
+      font-family: 'Arial';
+    }
+  }
+
+  &-desc {
+    @include border(top);
+
+    font-size: 14px;
+    padding: 16px;
+    line-height: $line-height;
+    color: $text-color-prompt;
+  }
+
+  &-common {
+    @include border();
+
+    color: $text-color-default;
+  }
+}
