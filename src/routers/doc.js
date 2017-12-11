@@ -16,4 +16,9 @@ export default [
     name: 'Color',
     component: loadcomponents.load('Color', 'views', '/doc'),
   },
+  {
+    path: 'font',
+    name: 'Font',
+    component: loadcomponents.load('Font', 'views', '/doc'),
+  },
 ];

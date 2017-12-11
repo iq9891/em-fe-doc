@@ -8,30 +8,30 @@
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-brand-default">
-          <h5 class="color-title">brand 默认</h5>
+          <h5 class="color-title">主色 默认</h5>
           <p class="color-desc">#1996f9</p>
         </div>
       </emfe-col>
       <emfe-col className="color" span="6">
         <div class="color-common color-brand-hover">
-          <h5 class="color-title">brand 悬停</h5>
+          <h5 class="color-title">浅色 悬停</h5>
           <p class="color-desc">#50affa</p>
         </div>
       </emfe-col>
       <emfe-col className="color" span="6">
         <div class="color-common color-brand-focus">
-          <h5 class="color-title">brand 点击</h5>
+          <h5 class="color-title">重色 点击</h5>
           <p class="color-desc">#147dd9</p>
         </div>
       </emfe-col>
       <emfe-col className="color" span="6">
         <div class="color-common color-brand-active">
-          <h5 class="color-title">brand 选中</h5>
+          <h5 class="color-title">特浅 选中</h5>
           <p class="color-desc">#f2f9ff</p>
         </div>
       </emfe-col>
     </emfe-row>
-    <h4 class="h4">辅助色 auxiliary</h4>
+    <h4 class="h4 color-h4">辅助色 auxiliary</h4>
     <emfe-row :gutter="16" className="color">
       <emfe-col className="color" span="6">
         <div class="color-common color-auxiliary-success">
@@ -53,62 +53,132 @@
       </emfe-col>
       <emfe-col className="color" span="6">
         <div class="color-common color-auxiliary-info">
-          <h5 class="color-title">auxiliary 提示</h5>
+          <h5 class="color-title">auxiliary 信息</h5>
           <p class="color-desc">#1996f9</p>
         </div>
       </emfe-col>
     </emfe-row>
-    <h4 class="h4">文字色 font</h4>
+    <h4 class="h4 color-h4">文字色 font</h4>
     <emfe-row :gutter="16" className="color">
-      <emfe-col className="color" span="3">
+      <emfe-col className="color" span="6">
         <div class="color-common color-font-text">
-          <h5 class="color-title">正文颜色</h5>
+          <h5 class="color-title">正文</h5>
           <p class="color-desc">#333333</p>
         </div>
       </emfe-col>
-      <emfe-col className="color" span="3">
+      <emfe-col className="color" span="6">
         <div class="color-common color-font-menu">
-          <h5 class="color-title">一级侧导航颜色</h5>
+          <h5 class="color-title">导航</h5>
           <p class="color-desc">#454545</p>
         </div>
       </emfe-col>
-      <emfe-col className="color" span="3">
-        <div class="color-common color-font-bar">
-          <h5 class="color-title">二级侧导航颜色</h5>
-          <p class="color-desc">#666666</p>
-        </div>
-      </emfe-col>
-      <emfe-col className="color" span="3">
+      <emfe-col className="color" span="6">
         <div class="color-common color-font-prompt">
-          <h5 class="color-title">提示颜色</h5>
+          <h5 class="color-title">默认提示</h5>
           <p class="color-desc">#999999</p>
         </div>
       </emfe-col>
-      <emfe-col className="color" span="3">
+      <emfe-col className="color" span="6">
         <div class="color-common color-font-disable">
-          <h5 class="color-title">禁用颜色</h5>
+          <h5 class="color-title">禁用</h5>
           <p class="color-desc">#d8d8d8</p>
         </div>
       </emfe-col>
-      <emfe-col className="color" span="3">
-        <div class="color-common color-font-tag-checkout">
-          <h5 class="color-title">标签多选颜色</h5>
-          <p class="color-desc">#ecb55d</p>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-tip">
+          <h5 class="color-title">特别提示</h5>
+          <p class="color-desc">#4cbd63</p>
         </div>
       </emfe-col>
-      <emfe-col className="color" span="3">
-        <div class="color-common color-font-tag-checkout-active">
-          <h5 class="color-title">标签选中颜色</h5>
-          <p class="color-desc">#ecb55d</p>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-error">
+          <h5 class="color-title">报错文字</h5>
+          <p class="color-desc">#ff4949</p>
         </div>
       </emfe-col>
-      <emfe-col className="color" span="3">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-font-link">
+          <h5 class="color-title">超链接</h5>
+          <p class="color-desc">#1996f9</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
         <div class="color-common color-font-write">
-          <h5 class="color-title">白色</h5>
+          <h5 class="color-title">填充色按钮</h5>
           <p class="color-desc">#ffffff</p>
         </div>
       </emfe-col>
     </emfe-row>
+    <h4 class="h4 color-h4">背景色</h4>
+    <h5 class="h5 color-h5">全局</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-title">
+          <h5 class="color-title">标题/勾选展开</h5>
+          <p class="color-desc">#f5f6fa</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-disable">
+          <h5 class="color-title">禁用</h5>
+          <p class="color-desc">#f4f4f4</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
+    <h5 class="h5 color-h5">切换标签</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-tag-default">
+          <h5 class="color-title">默认</h5>
+          <p class="color-desc">#dfe3e6</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-tag-hover">
+          <h5 class="color-title">悬停</h5>
+          <p class="color-desc">#e8ebed</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-bg-tag-selected">
+          <h5 class="color-title">选中</h5>
+          <p class="color-desc">#607384</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
+    <h4 class="h4 color-h4">线框颜色</h4>
+    <h5 class="h5 color-h5">全局</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-border-btn-default">
+          <h5 class="color-title">默认</h5>
+          <p class="color-desc">#dcdcdc</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
+    <h5 class="h5 color-h5">按钮</h5>
+    <emfe-row :gutter="16" className="color">
+      <emfe-col className="color" span="6">
+        <div class="color-common color-border-btn-default">
+          <h5 class="color-title">默认</h5>
+          <p class="color-desc">#dcdcdc</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-border-btn-hover">
+          <h5 class="color-title">悬停</h5>
+          <p class="color-desc">#f4f4f4</p>
+        </div>
+      </emfe-col>
+      <emfe-col className="color" span="6">
+        <div class="color-common color-border-btn-focus">
+          <h5 class="color-title">点击</h5>
+          <p class="color-desc">#f4f4f4</p>
+        </div>
+      </emfe-col>
+    </emfe-row>
+    <h4 class="h4 color-h4">标签</h4>
+
   </article>
 </template>
 

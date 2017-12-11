@@ -13,6 +13,9 @@
         <li class="dmenu-li">
           <router-link class="link dmenu-link" :to="{ name: 'Color' }">色彩</router-link>
         </li>
+        <li class="dmenu-li">
+          <router-link class="link dmenu-link" :to="{ name: 'Font' }">字体</router-link>
+        </li>
       </ul>
       <h2 class="dmenu-h2">组件</h2>
       <dl class="dmenu-dl">

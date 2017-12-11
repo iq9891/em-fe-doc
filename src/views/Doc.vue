@@ -3,9 +3,11 @@
     <d-header></d-header>
     <div class="doc-wrap">
       <d-menu></d-menu>
-      <keep-alive>
-        <router-view class="doc-view"></router-view>
-      </keep-alive>
+      <div class="doc-view-box">
+        <keep-alive>
+          <router-view class="doc-view"></router-view>
+        </keep-alive>
+      </div>
     </div>
   </div>
 </template>
