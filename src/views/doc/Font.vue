@@ -37,8 +37,8 @@
     <h4 class="h4">Font-family 代码</h4>
     <d-code type="css">{{ font }}</d-code>
     <h4 class="h4">字体使用规范</h4>
-    <emfe-table class="table" :columns="fontTh" :data="fontTd" :hover="true">
-      <emfe-table-head  slot="head" >
+    <emfe-table class="table" :columns="fontTh" :data="fontTd">
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in fontTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>

@@ -2,7 +2,7 @@
   <emfe-row className="demo">
     <emfe-col className="demo" span="12" ref="review">
       <div class="demo-preview">
-        <emfe-button type="default">123</emfe-button>
+        <slot></slot>
       </div>
       <div class="demo-info">
         <header class="demo-header">
@@ -12,7 +12,7 @@
       </div>
     </emfe-col>
     <emfe-col className="demo" span="12" :style="{height: `${height}`}" ref="source">
-      <div class="demo-code-box" @click="moreClick">
+      <div class="demo-code-box">
         <d-code type="html" className="demo" :href="href">{{ code }}</d-code>
       </div>
       <div class="demo-more" @click="moreClick">
