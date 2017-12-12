@@ -26,4 +26,9 @@ export default [
     name: 'Icon',
     component: loadcomponents.load('Icon', 'views', '/doc'),
   },
+  {
+    path: 'grid',
+    name: 'Grid',
+    component: loadcomponents.load('Grid', 'views', '/doc'),
+  },
 ];
