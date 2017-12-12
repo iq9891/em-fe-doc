@@ -1,0 +1,31 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.icon {
+  &-input {
+    margin: 24px 0;
+    width: 70%;
+  }
+
+  &-col {
+    margin: 16px 0;
+  }
+
+  &-item {
+    @include border();
+
+    text-align: center;
+    height: 114px;
+    cursor: pointer;
+  }
+
+  &-icon {
+    padding: 16px 0 0;
+    font-size: 24px;
+  }
+
+  &-p {
+    padding: 24px 8px 0;
+    margin: 0;
+  }
+}

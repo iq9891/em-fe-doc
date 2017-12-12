@@ -1,6 +1,10 @@
 @import "../config.scss";
 @import "../mixin/mixin.scss";
 
+.pre {
+  margin: 24px 0;
+}
+
 .code {
   font-size: 12px;
   line-height: $line-height;

@@ -10,9 +10,15 @@
   }
 
   &-view {
-    width: 80%;
+    width: 100%;
     box-shadow: inset 4px 4px 8px $shadow-color;
     padding: 32px;
-    overflow: auto;
+    min-height: 100%;
+
+    &-box {
+      width: 80%;
+      overflow: auto;
+      height: 100%;
+    }
   }
 }
