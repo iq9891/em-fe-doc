@@ -1,0 +1,16 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.grid {
+  &-blue {
+    background: $brand-color-default;
+    color: $background-color-write;
+    padding: 24px;
+  }
+
+  &-lightblue {
+    background: $brand-color-hover;
+    color: $background-color-write;
+    padding: 24px;
+  }
+}
