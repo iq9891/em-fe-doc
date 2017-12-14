@@ -8,5 +8,9 @@ export default {
       router: { name: 'Icon' },
       title: '字体图标',
     },
+    {
+      router: { name: 'Header' },
+      title: '头部',
+    },
   ],
 };

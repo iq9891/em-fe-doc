@@ -36,4 +36,9 @@ export default [
     name: 'Layout',
     component: loadcomponents.load('Layout', 'views', '/doc'),
   },
+  {
+    path: 'header',
+    name: 'Header',
+    component: loadcomponents.load('Header', 'views', '/doc'),
+  },
 ];
