@@ -31,4 +31,9 @@ export default [
     name: 'Grid',
     component: loadcomponents.load('Grid', 'views', '/doc'),
   },
+  {
+    path: 'layout',
+    name: 'Layout',
+    component: loadcomponents.load('Layout', 'views', '/doc'),
+  },
 ];
