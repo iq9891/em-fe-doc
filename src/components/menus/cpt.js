@@ -20,5 +20,9 @@ export default {
       router: { name: 'Iscroll' },
       title: 'Iscroll 滚动',
     },
+    {
+      router: { name: 'Link' },
+      title: 'Link 链接',
+    },
   ],
 };
