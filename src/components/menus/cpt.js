@@ -2,11 +2,19 @@ export default {
   base: [
     {
       router: { name: 'Grid' },
-      title: '栅格',
+      title: 'Grid 栅格',
     },
     {
       router: { name: 'Icon' },
-      title: '字体图标',
+      title: 'Icon 字体图标',
+    },
+    {
+      router: { name: 'Header' },
+      title: 'Header 头部',
+    },
+    {
+      router: { name: 'Footer' },
+      title: 'Footer 底部',
     },
   ],
 };

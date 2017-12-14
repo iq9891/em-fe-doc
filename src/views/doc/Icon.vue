@@ -68,6 +68,10 @@ export default {
           key: 'type',
         },
         {
+          title: '是否必须',
+          key: 'must',
+        },
+        {
           title: '默认值',
           key: 'default',
         },
@@ -77,12 +81,14 @@ export default {
           name: { text: 'type', row: false },
           desc: { text: '图标的名称', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           name: { text: 'class-name', row: false },
           desc: { text: '自定义的 class 名称', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
       ],

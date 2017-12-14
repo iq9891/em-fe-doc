@@ -1,0 +1,27 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.layout {
+  &-wrap {
+    @include border();
+
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-header {
+    width: 100%;
+    position: static;
+  }
+
+  &-menu {
+    position: static;
+    float: left;
+  }
+
+  &-main {
+    float: left;
+    padding: 16px;
+  }
+}

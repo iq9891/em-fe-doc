@@ -1,5 +1,5 @@
 <template>
-  <article class="font">
+  <article class="grid">
     <h2 class="h2">栅格</h2>
     <p class="p">在多数业务情况下，EMFE 需要在设计区域内解决大量信息收纳的问题，因此在 12 栅格系统的基础上，我们将整个设计建议区域按照 24 等分的原则进行划分。</p>
     <p class="p">划分之后的信息区块我们称之为『盒子』。建议横向排列的盒子数量最多四个，最少一个。『盒子』在整个屏幕上占比见上图。设计部分基于盒子的单位定制盒子内部的排版规则，以保证视觉层面的舒适感。</p>
@@ -166,14 +166,12 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import font from '@/views/code/font';
 import grid from '@/views/code/grid';
 
 export default {
   data() {
     return {
       grid,
-      font,
       rowTh: [
         {
           title: '属性',
@@ -188,6 +186,10 @@ export default {
           key: 'type',
         },
         {
+          title: '是否必须',
+          key: 'must',
+        },
+        {
           title: '默认值',
           key: 'default',
         },
@@ -197,36 +199,42 @@ export default {
           attr: { text: 'gutter', desc: false },
           desc: { text: '栅格间距，单位 px ，左右平分。范围： 0 ~ 48 。', row: false },
           type: { text: 'Number | String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '8', row: false },
         },
         {
           attr: { text: 'basin', desc: false },
           desc: { text: '垂直栅格间距，单位 px ，上下平分。范围： 0 ~ 48 。', row: false },
           type: { text: 'Number | String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '0', row: false },
         },
         {
           attr: { text: 'type', desc: false },
           desc: { text: '布局模式，可选值为 Flex 或不选。 Flex 在现代浏览器下有效。', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'align', desc: false },
           desc: { text: 'Flex 布局下的垂直对齐方式，可选值为 top 、 middle 、 bottom 。', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'justify', desc: false },
           desc: { text: 'Flex 布局下的水平排列方式，可选值为 start 、 end、center 、 space-around、  space-between 。', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'className(class-name)', desc: false },
           desc: { text: '自定义的 class 名称。', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
       ],
@@ -244,6 +252,10 @@ export default {
           key: 'type',
         },
         {
+          title: '是否必须',
+          key: 'must',
+        },
+        {
           title: '默认值',
           key: 'default',
         },
@@ -253,60 +265,70 @@ export default {
           attr: { text: 'span', desc: false },
           desc: { text: '栅格的占位格数，可选值为 0 ~ 24 的整数，为 0 时，相当于 display: none。', row: false },
           type: { text: 'Number | String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'tag', desc: false },
           desc: { text: '自定义标签名字。', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: 'div', row: false },
         },
         {
           attr: { text: 'offset', desc: false },
           desc: { text: '栅格左侧的间隔格数，间隔内不可以有栅格。', row: false },
           type: { text: 'Number | String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'push', desc: false },
           desc: { text: '栅格向右移动格数。', row: false },
           type: { text: 'Number | String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'pull', desc: false },
           desc: { text: '栅格向左移动格数。', row: false },
           type: { text: 'Number | String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'xs', desc: false },
           desc: { text: '< 768px 响应式栅格，可为栅格数或一个包含其他属性的对象。', row: false },
           type: { text: 'Number | Object', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'md', desc: false },
           desc: { text: '≥ 992px 响应式栅格，可为栅格数或一个包含其他属性的对象 。', row: false },
           type: { text: 'Number | Object', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'lg', desc: false },
           desc: { text: '≥ 1200px 响应式栅格，可为栅格数或一个包含其他属性的对象 。', row: false },
           type: { text: 'Number | Object', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'xl', desc: false },
           desc: { text: '≥ 1600px 响应式栅格，可为栅格数或一个包含其他属性的对象 。', row: false },
           type: { text: 'Number | Object', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
           attr: { text: 'className(class-name)', desc: false },
           desc: { text: '自定义的 class 名称。', row: false },
           type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
       ],
