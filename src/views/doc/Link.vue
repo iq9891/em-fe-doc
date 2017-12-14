@@ -1,12 +1,12 @@
 <template>
   <article class="link">
-    <h2 class="h2">链接</h2>
+    <h2 class="h2">Link 链接</h2>
     <p class="p">用于整个网站的公共超级链接。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="link.base" href="http://output.jsbin.com/jojoteb" title="基本用法" info="routers 的属性里面配置路由。">
       <emfe-link :routers="{ name: 'Font' }">去 EM-FE 的字体</emfe-link>
     </d-demo>
-    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 的属性里面配置路由。">
+    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 中设置 url 属性即可">
       <emfe-link :routers="{ url: 'https://www.evente.cn' }">去活动易</emfe-link>
     </d-demo>
     <h4 class="h4">API</h4>

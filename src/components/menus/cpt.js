@@ -24,5 +24,9 @@ export default {
       router: { name: 'Link' },
       title: 'Link 链接',
     },
+    {
+      router: { name: 'Transition' },
+      title: 'Transition 动画',
+    },
   ],
 };
