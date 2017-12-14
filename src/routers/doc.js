@@ -51,4 +51,14 @@ export default [
     name: 'Iscroll',
     component: loadcomponents.load('Iscroll', 'views', '/doc'),
   },
+  {
+    path: 'link',
+    name: 'Link',
+    component: loadcomponents.load('Link', 'views', '/doc'),
+  },
+  {
+    path: 'transition',
+    name: 'Transition',
+    component: loadcomponents.load('Transition', 'views', '/doc'),
+  },
 ];

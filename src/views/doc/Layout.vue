@@ -1,6 +1,6 @@
 <template>
   <article class="layout">
-    <h2 class="h2">布局</h2>
+    <h2 class="h2">Layout 布局</h2>
     <p class="p">布局和导航是产品的骨架，是页面的重要构成模式之一，是作为后续展开页面设计的基础，可以为产品奠定交互和视觉风格。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="layout.base" href="http://output.jsbin.com/goxijud" title="基本用法" info="传统的后台布局。也可以根据需求定制布局。">

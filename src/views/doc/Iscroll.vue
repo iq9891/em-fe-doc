@@ -1,6 +1,6 @@
 <template>
   <article class="iscroll">
-    <h2 class="h2">滚动</h2>
+    <h2 class="h2">Iscroll 滚动</h2>
     <p class="p">本组件是 iscroll5 的二次封装。 参照地址：<a href="http://iscrolljs.com" class="link">http://iscrolljs.com</a>。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="iscroll.base" href="http://output.jsbin.com/zekewuy" title="基本用法" info="加上 options 配置，最外层给 position: relative;height: 100px;overflow: hidden; 即可使用，三种样式缺一不可。">

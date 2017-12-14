@@ -1,14 +1,14 @@
 export default [
   {
     router: { name: 'Layout' },
-    title: '布局',
+    title: 'Layout 布局',
   },
   {
     router: { name: 'Font' },
-    title: '字体',
+    title: 'Font 字体',
   },
   {
     router: { name: 'Color' },
-    title: '色彩',
+    title: 'Color 色彩',
   },
 ];

@@ -1,0 +1,13 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.transition {
+  &-block {
+    width: 200px;
+    height: 50px;
+    margin: 32px 0 0;
+    padding: 16px;
+    background: $brand-color-default;
+    color: $background-color-write;
+  }
+}

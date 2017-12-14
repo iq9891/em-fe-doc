@@ -1,10 +1,13 @@
 <template>
-  <article class="header">
-    <h2 class="h2">Header 头部</h2>
-    <p class="p">用于整个网站的公共头部。</p>
+  <article class="link">
+    <h2 class="h2">Link 链接</h2>
+    <p class="p">用于整个网站的公共超级链接。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="header.base" href="http://output.jsbin.com/tisibo" title="基本用法" info="简单的使用。">
-      <emfe-header className="header" user="EM-FE" :home="home"></emfe-header>
+    <d-demo :code="link.base" href="http://output.jsbin.com/jojoteb" title="基本用法" info="routers 的属性里面配置路由。">
+      <emfe-link :routers="{ name: 'Font' }">去 EM-FE 的字体</emfe-link>
+    </d-demo>
+    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 中设置 url 属性即可">
+      <emfe-link :routers="{ url: 'https://www.evente.cn' }">去活动易</emfe-link>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -14,7 +17,7 @@
       <emfe-table-body slot="body"  v-for="(dataList,index) in propTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
-    <h5 class="h5">方法</h5>
+    <h5 class="h5">事件</h5>
     <emfe-table class="table" :columns="eventTh" :data="eventTd">
       <emfe-table-head  slot="head" >
       </emfe-table-head>
@@ -26,12 +29,12 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import header from '@/views/code/header';
+import link from '@/views/code/link';
 
 export default {
   data() {
     return {
-      header,
+      link,
       propTh: [
         {
           title: '属性',
@@ -56,25 +59,25 @@ export default {
       ],
       propTd: [
         {
-          attr: { text: 'logo', desc: false },
-          desc: { text: 'logo 的图片地址', row: false },
+          attr: { text: 'tag', desc: false },
+          desc: { text: '设置渲染出来的标签。必须结合 routers 使用。如果是正常的 Vue 的 Router 跳转属性，才能正常渲染 tag 设置的标签。', row: false },
           type: { text: 'String', row: false },
           must: { text: 'false', row: false },
-          default: { text: 'https://static2.evente.cn/static/img/logo2017.png', row: false },
+          default: { text: '-', row: false },
         },
         {
-          attr: { text: 'user', desc: false },
-          desc: { text: '用户名称', row: false },
+          attr: { text: 'routers', desc: false },
+          desc: { text: '设置跳转，支持router里面的属性，外跳属性是 url', row: false },
           type: { text: 'String', row: false },
           must: { text: 'true', row: false },
           default: { text: '-', row: false },
         },
         {
-          attr: { text: 'home', desc: false },
-          desc: { text: '点击 logo 的方法。如果没有默认跳转 https://www.evente.cn/ 并触发 goHome 方法。', row: false },
+          attr: { text: 'click', desc: false },
+          desc: { text: '点击事件', row: false },
           type: { text: 'Function', row: false },
           must: { text: 'false', row: false },
-          default: { text: '-', row: false },
+          default: { text: 'function(){}', row: false },
         },
         {
           attr: { text: 'className(class-name)', desc: false },
@@ -100,23 +103,8 @@ export default {
       ],
       eventTd: [
         {
-          attr: { text: 'logout', desc: false },
-          desc: { text: '退出登录触发', row: false },
-          return: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'goIndex', desc: false },
-          desc: { text: '控制台首页触发', row: false },
-          return: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'goAccount', desc: false },
-          desc: { text: '点击用户触发', row: false },
-          return: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'goHome', desc: false },
-          desc: { text: '点击 logo 触发。和 home 属性互斥。', row: false },
+          attr: { text: 'click', desc: false },
+          desc: { text: '点击触发', row: false },
           return: { text: '-', row: false },
         },
       ],
@@ -134,6 +122,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "../../assets/styles/views/doc/header.scss";
+<!--<style lang="scss">
+// @import "../../assets/styles/views/doc/link.scss";
 </style>
+-->

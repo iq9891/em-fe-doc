@@ -1,6 +1,6 @@
 <template>
   <article class="font">
-    <h2 class="h2">字体</h2>
+    <h2 class="h2">Font 字体</h2>
     <p class="p">EM-FE 的 CSS 对字体进行了统一规范。跨平台的字体设定，力求在各个操作系统下都有最佳展示效果。</p>
     <h3 class="h3">概述</h3>
     <p class="p">EM-FE 推荐使用以下调色板的颜色作为设计和开发规范，以保证页面和组件之间的视觉一致。</p>

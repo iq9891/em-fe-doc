@@ -1,6 +1,6 @@
 <template>
   <article class="icon">
-    <h2 class="h2">字体图标</h2>
+    <h2 class="h2">Icon 字体图标</h2>
     <p class="p">Em-FE 使用的是 <a href="http://www.iconfont.cn/" class="link">iconfont</a> 生成的字体。</p>
     <h4 class="h4">如何使用</h4>
     <p class="p">使用 <code class="code-inline">&lt;emfe-icon /&gt;</code> 组件，指定图标对应的 <code class="code-inline">type</code> 属性，示例代码：</p>

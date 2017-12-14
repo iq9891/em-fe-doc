@@ -1,6 +1,6 @@
 <template>
   <article class="color">
-    <h2 class="h2">色彩</h2>
+    <h2 class="h2">Color 色彩</h2>
     <p class="p">本节将介绍如何在项目中， EM-FE 遵循的色彩规范。EM-FE 推荐使用以下调色板的颜色作为设计和开发规范，以保证页面和组件之间的视觉一致。</p>
     <h4 class="h4">品牌色 brand</h4>
     <emfe-row :gutter="16" className="color">
