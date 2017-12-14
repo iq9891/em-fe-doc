@@ -46,4 +46,9 @@ export default [
     name: 'Footer',
     component: loadcomponents.load('Footer', 'views', '/doc'),
   },
+  {
+    path: 'iscroll',
+    name: 'Iscroll',
+    component: loadcomponents.load('Iscroll', 'views', '/doc'),
+  },
 ];

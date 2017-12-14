@@ -16,5 +16,9 @@ export default {
       router: { name: 'Footer' },
       title: 'Footer 底部',
     },
+    {
+      router: { name: 'Iscroll' },
+      title: 'Iscroll 滚动',
+    },
   ],
 };

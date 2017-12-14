@@ -1,0 +1,12 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.iscroll {
+  &-wrap {
+    @include border();
+
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+  }
+}
