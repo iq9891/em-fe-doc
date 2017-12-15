@@ -54,5 +54,9 @@ export default {
       router: { name: 'Steps' },
       title: 'Steps 图标指引',
     },
+    {
+      router: { name: 'Stepsb' },
+      title: 'Stepsb 步骤指引',
+    },
   ],
 };
