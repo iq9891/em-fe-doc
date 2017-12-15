@@ -96,4 +96,9 @@ export default [
     name: 'Stepsb',
     component: loadcomponents.load('Stepsb', 'views', '/doc'),
   },
+  {
+    path: 'checkout',
+    name: 'Checkout',
+    component: loadcomponents.load('Checkout', 'views', '/doc'),
+  },
 ];

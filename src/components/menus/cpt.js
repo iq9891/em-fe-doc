@@ -59,4 +59,10 @@ export default {
       title: 'Stepsb 步骤指引',
     },
   ],
+  form: [
+    {
+      router: { name: 'Checkout' },
+      title: 'Checkout 多选',
+    },
+  ],
 };

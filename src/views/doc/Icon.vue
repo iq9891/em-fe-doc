@@ -8,14 +8,14 @@
     <p class="p">渲染后为：</p>
     <d-code type="html" href="http://output.jsbin.com/zopumap">{{ rendor }}</d-code>
     <h4 class="h4">API</h4>
-    <h5 class="h5">Icon 属性</h5>
+    <h5 class="h5">属性</h5>
     <emfe-table class="table" :columns="propTh" :data="propTd">
       <emfe-table-head  slot="head" >
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in propTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
-    <h5 class="h5">Icon 事件</h5>
+    <h5 class="h5">事件</h5>
     <emfe-table class="table" :columns="eventTh" :data="eventTd">
       <emfe-table-head  slot="head" >
       </emfe-table-head>
