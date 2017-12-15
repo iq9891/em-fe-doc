@@ -38,5 +38,9 @@ export default {
       router: { name: 'Menu' },
       title: 'Menu 菜单',
     },
+    {
+      router: { name: 'Bar' },
+      title: 'Bar 二级导航',
+    },
   ],
 };

@@ -52,9 +52,12 @@ export default {
     },
   },
   mounted() {
-    this.review = `${this.$refs.review.$el.clientHeight}px`;
-    this.source = 'auto';
-    this.height = this.review;
+    // 不加定时器，有可能高度获取不正确，如 /doc/bar 中的 demo
+    setTimeout(() => {
+      this.review = `${this.$refs.review.$el.clientHeight}px`;
+      this.source = 'auto';
+      this.height = this.review;
+    }, 0);
   },
   methods: {
     moreClick() {

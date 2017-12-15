@@ -116,7 +116,6 @@ export default {
     },
   },
   components: {
-    dCode: loadcomponents.load('Dcode'),
     dDemo: loadcomponents.load('Ddemo'),
   },
 };

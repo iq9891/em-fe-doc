@@ -71,4 +71,9 @@ export default [
     name: 'Menu',
     component: loadcomponents.load('Menu', 'views', '/doc'),
   },
+  {
+    path: 'bar',
+    name: 'Bar',
+    component: loadcomponents.load('Bar', 'views', '/doc'),
+  },
 ];
