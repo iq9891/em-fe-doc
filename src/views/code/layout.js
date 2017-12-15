@@ -33,7 +33,7 @@ export default {
 <script>
   export default {
     data() {
-      menuData: [
+      return menuData: [
         {
           title: '百度',
           icon: 'fabu',

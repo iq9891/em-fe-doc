@@ -33,4 +33,10 @@ export default {
       title: 'Transition 动画',
     },
   ],
+  nav: [
+    {
+      router: { name: 'Menu' },
+      title: 'Menu 菜单',
+    },
+  ],
 };
