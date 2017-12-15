@@ -61,4 +61,9 @@ export default [
     name: 'Transition',
     component: loadcomponents.load('Transition', 'views', '/doc'),
   },
+  {
+    path: 'button',
+    name: 'Button',
+    component: loadcomponents.load('Button', 'views', '/doc'),
+  },
 ];

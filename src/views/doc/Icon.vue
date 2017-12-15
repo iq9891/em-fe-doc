@@ -16,10 +16,10 @@
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">Icon 事件</h5>
-    <emfe-table class="table" :columns="methodTh" :data="methodTd">
+    <emfe-table class="table" :columns="eventTh" :data="eventTd">
       <emfe-table-head  slot="head" >
       </emfe-table-head>
-      <emfe-table-body slot="body"  v-for="(dataList,index) in methodTd" :ind="index" :key="index" :dataList="dataList">
+      <emfe-table-body slot="body"  v-for="(dataList,index) in eventTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h4 class="h4">示例</h4>
@@ -92,7 +92,7 @@ export default {
           default: { text: '-', row: false },
         },
       ],
-      methodTh: [
+      eventTh: [
         {
           title: '事件',
           key: 'name',
@@ -106,7 +106,7 @@ export default {
           key: 'return',
         },
       ],
-      methodTd: [
+      eventTd: [
         {
           name: { text: 'click', row: false },
           desc: { text: '点击触发。并且是阻止冒泡。', row: false },

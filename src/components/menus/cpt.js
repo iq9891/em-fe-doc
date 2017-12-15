@@ -25,6 +25,10 @@ export default {
       title: 'Link 链接',
     },
     {
+      router: { name: 'Button' },
+      title: 'Button 按钮',
+    },
+    {
       router: { name: 'Transition' },
       title: 'Transition 动画',
     },
