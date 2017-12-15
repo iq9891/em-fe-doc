@@ -33,4 +33,26 @@ export default {
       title: 'Transition 动画',
     },
   ],
+  nav: [
+    {
+      router: { name: 'Menu' },
+      title: 'Menu 菜单',
+    },
+    {
+      router: { name: 'Bar' },
+      title: 'Bar 二级导航',
+    },
+    {
+      router: { name: 'Crumb' },
+      title: 'Crumb 面包屑',
+    },
+    {
+      router: { name: 'Page' },
+      title: 'Page 分页',
+    },
+    {
+      router: { name: 'Steps' },
+      title: 'Steps 图标指引',
+    },
+  ],
 };

@@ -1,13 +1,10 @@
 <template>
-  <article class="link">
-    <h2 class="h2">Link 链接</h2>
-    <p class="p">用于整个网站的公共超级链接。</p>
+  <article class="menu">
+    <h2 class="h2">Menu 导航</h2>
+    <p class="p">用于整个网站的公共左侧导航。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="link.base" href="http://output.jsbin.com/jojoteb" title="基本用法" info="routers 的属性里面配置路由。">
-      <emfe-link :routers="{ name: 'Font' }">去 EM-FE 的字体</emfe-link>
-    </d-demo>
-    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 中设置 url 属性即可">
-      <emfe-link :routers="{ url: 'https://www.evente.cn' }">去活动易</emfe-link>
+    <d-demo :code="menu.base" href="http://output.jsbin.com/babesiz" title="基本用法" info="导航数据放在 datas 里面。">
+      <emfe-menu className="menu" :datas="base"></emfe-menu>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -29,12 +26,22 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import link from '@/views/code/link';
+import menu from '@/views/code/menu';
 
 export default {
   data() {
     return {
-      link,
+      menu,
+      base: [
+        {
+          title: '字体',
+          icon: 'fabu',
+        },
+        {
+          title: '会员',
+          icon: 'tishi',
+        },
+      ],
       propTh: [
         {
           title: '属性',
@@ -59,25 +66,25 @@ export default {
       ],
       propTd: [
         {
-          attr: { text: 'tag', desc: false },
-          desc: { text: '设置渲染出来的标签。必须结合 routers 使用。如果是正常的 Vue 的 Router 跳转属性，才能正常渲染 tag 设置的标签。', row: false },
-          type: { text: 'String', row: false },
-          must: { text: 'false', row: false },
-          default: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'routers', desc: false },
-          desc: { text: '设置跳转，支持router里面的属性，外跳属性是 url', row: false },
-          type: { text: 'String', row: false },
+          attr: { text: 'datas', desc: false },
+          desc: { text: '导航的数据。 {children: [{ routers: { path: \'\'}, url: \'\', }], routers: { path: \'\' }, url: \'\'}。<br>children：判断是否有二级的标识。url：外链标识，routers：本路由跳转标识，并且结合fullpath和path高亮当前菜单。', row: false },
+          type: { text: 'Array', row: false },
           must: { text: 'true', row: false },
           default: { text: '-', row: false },
         },
         {
-          attr: { text: 'click', desc: false },
-          desc: { text: '点击事件', row: false },
-          type: { text: 'Function', row: false },
+          attr: { text: 'fullpath', desc: false },
+          desc: { text: '自定义全路径，如果没有默认就是路由中的fullpath。用于判断当前routers中的path是否在 fullpath 中，如果在则选中。', row: false },
+          type: { text: 'String', row: false },
           must: { text: 'false', row: false },
-          default: { text: 'function(){}', row: false },
+          default: { text: '-', row: false },
+        },
+        {
+          attr: { text: 'accordion', desc: false },
+          desc: { text: '二级菜单是否手风琴效果', row: false },
+          type: { text: 'Boolean', row: false },
+          must: { text: 'false', row: false },
+          default: { text: 'false', row: false },
         },
         {
           attr: { text: 'className(class-name)', desc: false },
@@ -89,8 +96,8 @@ export default {
       ],
       eventTh: [
         {
-          title: '事件名',
-          key: 'attr',
+          title: '事件',
+          key: 'name',
         },
         {
           title: '说明',
@@ -103,9 +110,14 @@ export default {
       ],
       eventTd: [
         {
-          attr: { text: 'click', desc: false },
-          desc: { text: '点击触发', row: false },
-          return: { text: '-', row: false },
+          name: { text: 'short', row: false },
+          desc: { text: '当点击一级导航顶部变小按钮的时候触发。', row: false },
+          return: { text: '一级导航状态(是否被展开), 二级导航状态(是否被展开)', row: false },
+        },
+        {
+          name: { text: 'column', row: false },
+          desc: { text: '当点击一级导航中的菜单，有二级导航出现的时候触发。', row: false },
+          return: { text: '一级导航状态(是否被展开), 二级导航状态(是否被展开)', row: false },
         },
       ],
     };
@@ -121,7 +133,6 @@ export default {
 };
 </script>
 
-<!--<style lang="scss">
-// @import "../../assets/styles/views/doc/link.scss";
+<style lang="scss">
+@import "../../assets/styles/views/doc/menu.scss";
 </style>
--->

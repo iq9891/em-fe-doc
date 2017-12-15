@@ -1,0 +1,8 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.crumb {
+  &-crumb {
+    @include border();
+  }
+}

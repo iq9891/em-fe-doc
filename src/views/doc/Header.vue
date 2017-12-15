@@ -57,9 +57,9 @@ export default {
       propTd: [
         {
           attr: { text: 'logo', desc: false },
-          desc: { text: 'logo 的图片地址', row: false },
+          desc: { text: 'logo 的图片地址。', row: false },
           type: { text: 'String', row: false },
-          must: { text: 'false', row: false },
+          must: { text: 'false。1.3.0 之前，该属性为必须', row: false },
           default: { text: 'https://static2.evente.cn/static/img/logo2017.png', row: false },
         },
         {
@@ -128,7 +128,6 @@ export default {
     },
   },
   components: {
-    dCode: loadcomponents.load('Dcode'),
     dDemo: loadcomponents.load('Ddemo'),
   },
 };

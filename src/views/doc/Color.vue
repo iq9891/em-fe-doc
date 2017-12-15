@@ -249,7 +249,6 @@
 </template>
 
 <script>
-import loadcomponents from '@/tools/loadcomponents';
 import install from '@/views/code/install';
 
 export default {
@@ -259,9 +258,6 @@ export default {
       importscript,
       cdn,
     };
-  },
-  components: {
-    dCode: loadcomponents.load('Dcode'),
   },
 };
 </script>

@@ -21,6 +21,13 @@
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
+      <h2 class="dmenu-h2">导航</h2>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Nav</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.nav">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
     </div>
   </div>
 </template>

@@ -66,4 +66,29 @@ export default [
     name: 'Button',
     component: loadcomponents.load('Button', 'views', '/doc'),
   },
+  {
+    path: 'menu',
+    name: 'Menu',
+    component: loadcomponents.load('Menu', 'views', '/doc'),
+  },
+  {
+    path: 'bar',
+    name: 'Bar',
+    component: loadcomponents.load('Bar', 'views', '/doc'),
+  },
+  {
+    path: 'crumb',
+    name: 'Crumb',
+    component: loadcomponents.load('Crumb', 'views', '/doc'),
+  },
+  {
+    path: 'page',
+    name: 'Page',
+    component: loadcomponents.load('Page', 'views', '/doc'),
+  },
+  {
+    path: 'steps',
+    name: 'Steps',
+    component: loadcomponents.load('Steps', 'views', '/doc'),
+  },
 ];
