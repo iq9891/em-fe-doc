@@ -1,10 +1,10 @@
 <template>
-  <article class="steps">
-    <h2 class="h2">Steps 图标指引</h2>
-    <p class="p">用于整个网站的图标指引。</p>
+  <article class="stepsb">
+    <h2 class="h2">Stepsb 步骤指引</h2>
+    <p class="p">用于整个网站的步骤指引。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="steps.base" href="http://output.jsbin.com/decekuj" title="基本用法" info="步骤信息加在 datas 属性上，步骤索引加在 active 属性上。">
-      <emfe-steps :datas="stepDatas" :active="1"></emfe-steps>
+    <d-demo :code="stepsb.base" href="http://output.jsbin.com/yujugi" title="基本用法" info="步骤信息加在 datas 属性上，步骤索引加在 active 属性上。">
+      <emfe-steps-b :datas="stepDatas" :active="2"></emfe-steps-b>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -19,30 +19,26 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import steps from '@/views/code/steps';
+import stepsb from '@/views/code/stepsb';
 
 export default {
   data() {
     return {
-      steps,
-      stepDatas: [
-        {
-          title: '第一步',
-          icon: 'fabu',
-        },
-        {
-          title: '第二步',
-          icon: 'erweima',
-        },
-        {
-          title: '第三步',
-          icon: 'tishi',
-        },
-        {
-          title: '第四步',
-          icon: 'shezhi',
-        },
-      ],
+      stepsb,
+      stepDatas: {
+        stepsText: [
+          {
+            text: '验证原手机号',
+          },
+          {
+            text: '验证新手机号',
+          },
+          {
+            text: '修改成功',
+          },
+        ],
+        allStepsNums: 3,
+      },
       propTh: [
         {
           title: '属性',
@@ -68,8 +64,8 @@ export default {
       propTd: [
         {
           attr: { text: 'datas', desc: false },
-          desc: { text: '进度数据。数据格式：[{icon: \'fabu\', title: \'\'}]', row: false },
-          type: { text: 'Array', row: false },
+          desc: { text: '进度数据。数据格式：{stepsText: [{text: \' \'}], allStepsNums: 1}', row: false },
+          type: { text: 'Object', row: false },
           must: { text: 'true', row: false },
           default: { text: '-', row: false },
         },

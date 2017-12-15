@@ -28,6 +28,13 @@
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
+      <h2 class="dmenu-h2">表单</h2>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Form</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.form">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
     </div>
   </div>
 </template>

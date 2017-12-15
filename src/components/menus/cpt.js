@@ -54,5 +54,19 @@ export default {
       router: { name: 'Steps' },
       title: 'Steps 图标指引',
     },
+    {
+      router: { name: 'Stepsb' },
+      title: 'Stepsb 步骤指引',
+    },
+  ],
+  form: [
+    {
+      router: { name: 'Checkout' },
+      title: 'Checkout 多选',
+    },
+    {
+      router: { name: 'Input' },
+      title: 'Input 输入框',
+    },
   ],
 };
