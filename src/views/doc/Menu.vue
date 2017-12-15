@@ -86,6 +86,13 @@ export default {
           must: { text: 'false', row: false },
           default: { text: 'false', row: false },
         },
+        {
+          attr: { text: 'className(class-name)', desc: false },
+          desc: { text: '自定义的 class 名称。', row: false },
+          type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
+          default: { text: '-', row: false },
+        },
       ],
       eventTh: [
         {

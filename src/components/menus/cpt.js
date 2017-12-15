@@ -42,5 +42,9 @@ export default {
       router: { name: 'Bar' },
       title: 'Bar 二级导航',
     },
+    {
+      router: { name: 'Crumb' },
+      title: 'Crumb 面包屑',
+    },
   ],
 };

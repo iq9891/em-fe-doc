@@ -76,4 +76,9 @@ export default [
     name: 'Bar',
     component: loadcomponents.load('Bar', 'views', '/doc'),
   },
+  {
+    path: 'crumb',
+    name: 'Crumb',
+    component: loadcomponents.load('Crumb', 'views', '/doc'),
+  },
 ];
