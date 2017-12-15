@@ -46,5 +46,9 @@ export default {
       router: { name: 'Crumb' },
       title: 'Crumb 面包屑',
     },
+    {
+      router: { name: 'Page' },
+      title: 'Page 分页',
+    },
   ],
 };

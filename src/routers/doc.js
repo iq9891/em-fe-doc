@@ -81,4 +81,9 @@ export default [
     name: 'Crumb',
     component: loadcomponents.load('Crumb', 'views', '/doc'),
   },
+  {
+    path: 'page',
+    name: 'Page',
+    component: loadcomponents.load('Page', 'views', '/doc'),
+  },
 ];
