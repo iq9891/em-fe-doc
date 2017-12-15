@@ -64,5 +64,9 @@ export default {
       router: { name: 'Checkout' },
       title: 'Checkout 多选',
     },
+    {
+      router: { name: 'Input' },
+      title: 'Input 输入框',
+    },
   ],
 };

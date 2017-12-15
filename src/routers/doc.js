@@ -101,4 +101,9 @@ export default [
     name: 'Checkout',
     component: loadcomponents.load('Checkout', 'views', '/doc'),
   },
+  {
+    path: 'input',
+    name: 'Input',
+    component: loadcomponents.load('Input', 'views', '/doc'),
+  },
 ];
