@@ -86,4 +86,9 @@ export default [
     name: 'Page',
     component: loadcomponents.load('Page', 'views', '/doc'),
   },
+  {
+    path: 'steps',
+    name: 'Steps',
+    component: loadcomponents.load('Steps', 'views', '/doc'),
+  },
 ];

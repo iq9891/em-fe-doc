@@ -50,5 +50,9 @@ export default {
       router: { name: 'Page' },
       title: 'Page 分页',
     },
+    {
+      router: { name: 'Steps' },
+      title: 'Steps 图标指引',
+    },
   ],
 };
