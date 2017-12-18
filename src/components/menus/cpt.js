@@ -72,5 +72,9 @@ export default {
       router: { name: 'Inputmore' },
       title: 'Inputmore 多个输入框',
     },
+    {
+      router: { name: 'Radio' },
+      title: 'Radio 单选',
+    },
   ],
 };

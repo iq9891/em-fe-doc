@@ -1,0 +1,11 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.radio {
+  &-radio {
+    @include border();
+
+    width: 100%;
+    position: static;
+  }
+}

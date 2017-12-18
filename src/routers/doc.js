@@ -111,4 +111,9 @@ export default [
     name: 'Inputmore',
     component: loadcomponents.load('Inputmore', 'views', '/doc'),
   },
+  {
+    path: 'radio',
+    name: 'Radio',
+    component: loadcomponents.load('Radio', 'views', '/doc'),
+  },
 ];
