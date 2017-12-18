@@ -68,5 +68,9 @@ export default {
       router: { name: 'Input' },
       title: 'Input 输入框',
     },
+    {
+      router: { name: 'Inputmore' },
+      title: 'Inputmore 多个输入框',
+    },
   ],
 };

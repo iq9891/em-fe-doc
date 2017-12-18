@@ -106,4 +106,9 @@ export default [
     name: 'Input',
     component: loadcomponents.load('Input', 'views', '/doc'),
   },
+  {
+    path: 'inputmore',
+    name: 'Inputmore',
+    component: loadcomponents.load('Inputmore', 'views', '/doc'),
+  },
 ];
