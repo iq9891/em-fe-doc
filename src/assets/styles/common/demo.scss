@@ -17,7 +17,9 @@
   }
 
   &-preview {
-    padding: 16px 16px 0;
+    margin: 16px 16px 0;
+    position: relative;
+    z-index: 4;
   }
 
   &-info {

@@ -76,5 +76,9 @@ export default {
       router: { name: 'Radio' },
       title: 'Radio 单选',
     },
+    {
+      router: { name: 'Select' },
+      title: 'Select 下拉框',
+    },
   ],
 };

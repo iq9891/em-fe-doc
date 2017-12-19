@@ -1,7 +1,7 @@
 <template>
   <article class="radio">
     <h2 class="h2">Radio 单选</h2>
-    <p class="p">用于整个网站的公共底部。</p>
+    <p class="p">用 Vue 模拟原生 Radio 。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="radio.base" href="http://output.jsbin.com/xafiyan" title="基本用法" info="index 代表索引必须传，name 必须定义一下，就像原生单选一样。 statu 设置默认选中。">
       <emfe-radio index="0" name="group1" :statu="true">文字1</emfe-radio>
