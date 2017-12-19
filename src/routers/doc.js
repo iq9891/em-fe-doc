@@ -136,4 +136,9 @@ export default [
     name: 'Textarea',
     component: loadcomponents.load('Textarea', 'views', '/doc'),
   },
+  {
+    path: 'imgcode',
+    name: 'Imgcode',
+    component: loadcomponents.load('Imgcode', 'views', '/doc'),
+  },
 ];

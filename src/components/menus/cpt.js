@@ -92,5 +92,9 @@ export default {
       router: { name: 'Textarea' },
       title: 'Textarea 多行文本',
     },
+    {
+      router: { name: 'Imgcode' },
+      title: 'Imgcode 图片验证码',
+    },
   ],
 };
