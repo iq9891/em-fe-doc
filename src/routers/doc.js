@@ -121,4 +121,9 @@ export default [
     name: 'Select',
     component: loadcomponents.load('Select', 'views', '/doc'),
   },
+  {
+    path: 'switch',
+    name: 'Switch',
+    component: loadcomponents.load('Switch', 'views', '/doc'),
+  },
 ];

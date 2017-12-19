@@ -20,7 +20,7 @@
     <d-demo :code="select.news" href="http://output.jsbin.com/zugorit" title="新建" info="通过 news 的属性设置新建模式。 1.3.0 开始支持 add 方法，用于保存事件触发。 1.3.0 开始支持 news 属性直接设置带有保存按钮的模式。">
       <emfe-select :datas="news" news @add="add"></emfe-select>
     </d-demo>
-    <d-demo :code="select.tips" href="http://output.jsbin.com/heciroc" title="提示" info="通过 tips 的属性设置。">
+    <d-demo :code="select.tips" href="http://output.jsbin.com/vubocay" title="提示" info="通过 tips 的属性设置。">
       <emfe-select :datas="tips" tip="提示文字" placement="right"></emfe-select>
     </d-demo>
     <d-demo :code="select.disabled" href="http://output.jsbin.com/heciroc" title="禁用" info="通过 disabled 的属性设置。">

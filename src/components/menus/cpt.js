@@ -80,5 +80,9 @@ export default {
       router: { name: 'Select' },
       title: 'Select 下拉框',
     },
+    {
+      router: { name: 'Switch' },
+      title: 'Switch 开关',
+    },
   ],
 };
