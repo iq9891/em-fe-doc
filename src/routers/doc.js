@@ -141,4 +141,9 @@ export default [
     name: 'Imgcode',
     component: loadcomponents.load('Imgcode', 'views', '/doc'),
   },
+  {
+    path: 'smscode',
+    name: 'Smscode',
+    component: loadcomponents.load('Smscode', 'views', '/doc'),
+  },
 ];

@@ -9,7 +9,7 @@
     <d-demo :code="input.disabled" href="http://output.jsbin.com/tutemiw" title="禁用" info="通过添加 disabled 属性可设置为不可用状态。">
       <emfe-input :disabled="true" placeholder="请输入"></emfe-input>
     </d-demo>
-    <d-demo :code="input.error" href="http://output.jsbin.com/suwehi" title="禁用" info="通过在内容添加 slot 展示报错信息。通过变量操作 errOk 属性，即可操作报错信息是否显示。">
+    <d-demo :code="input.error" href="http://output.jsbin.com/suwehi" title="禁用" info="通过在内容添加 slot 展示报错信息。通过变量操作 err-ok 属性，即可操作报错信息是否显示。">
       <emfe-button @click="error = true;">点击报错</emfe-button>
       <br>
       <br>

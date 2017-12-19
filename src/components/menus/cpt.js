@@ -96,5 +96,9 @@ export default {
       router: { name: 'Imgcode' },
       title: 'Imgcode 图片验证码',
     },
+    {
+      router: { name: 'Smscode' },
+      title: 'Smscode 短信验证码',
+    },
   ],
 };
