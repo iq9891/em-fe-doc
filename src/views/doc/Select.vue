@@ -169,13 +169,6 @@ export default {
           default: { text: '-', row: false },
         },
         {
-          attr: { text: 'datas', desc: false },
-          desc: { text: '数据。 type 为 default 的时候，数据格式为：[{ name: \'下拉文字\', disabled: false }]。 其中 name 是下拉选项的名字。 disabled 是否禁用，如果不禁用可不传。', row: false },
-          type: { text: 'Boolean', row: false },
-          must: { text: 'true', row: false },
-          default: { text: 'false', row: false },
-        },
-        {
           attr: { text: 'addText', desc: false },
           desc: { text: '新建模式中，新建输入框的默认提示文字。', row: false },
           type: { text: 'String', row: false },

@@ -122,11 +122,6 @@ export default {
       ],
     };
   },
-  methods: {
-    home() {
-      this.$router.push('/');
-    },
-  },
   components: {
     dDemo: loadcomponents.load('Ddemo'),
   },

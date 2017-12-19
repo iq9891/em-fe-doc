@@ -126,4 +126,9 @@ export default [
     name: 'Switch',
     component: loadcomponents.load('Switch', 'views', '/doc'),
   },
+  {
+    path: 'tel',
+    name: 'Tel',
+    component: loadcomponents.load('Tel', 'views', '/doc'),
+  },
 ];

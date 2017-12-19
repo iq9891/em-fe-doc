@@ -84,5 +84,9 @@ export default {
       router: { name: 'Switch' },
       title: 'Switch 开关',
     },
+    {
+      router: { name: 'Tel' },
+      title: 'Tel 电话组合',
+    },
   ],
 };
