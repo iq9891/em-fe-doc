@@ -1,7 +1,7 @@
 <template>
   <article class="page">
     <h2 class="h2">Page 分页</h2>
-    <p class="p">用于整个网站的分页。 1.3.0 之前不支持 em-page 。 emfe-page 属于 1.3.0 的新功能 。</p>
+    <p class="p">用于整个网站的分页。 1.3.0 之前不支持 em-page 。 1.3.0 新增。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="page.base" href="http://output.jsbin.com/yiculeg" title="基本用法" info="只需设置 page-count 属性即可。">
       <emfe-page :page-count="18"></emfe-page>
@@ -90,12 +90,12 @@ export default {
       eventTd: [
         {
           name: { text: 'change', row: false },
-          desc: { text: '当前页数改变时候触发。1.3.0 之前不支持', row: false },
+          desc: { text: '当前页数改变时候触发。 1.3.0 新增。', row: false },
           return: { text: '当前页码', row: false },
         },
         {
           name: { text: 'togglePage', row: false },
-          desc: { text: '当前页数改变时候触发。1.3.0 之后，建议统一用 change 方法', row: false },
+          desc: { text: '当前页数改变时候触发。1.3.0 开始，建议使用 change 方法。', row: false },
           return: { text: '当前页码', row: false },
         },
       ],

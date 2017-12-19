@@ -8,7 +8,7 @@
       <br>
       {{checkoutStatus1 ? '选中' : '未选中'}}
     </d-demo>
-    <d-demo :code="checkout.disabled" href="http://output.jsbin.com/hekeqil" title="禁用" info="通过设置 disabled 属性来禁用多选框。 1.3.0 开始统一使用 disabled 属性设置禁用。">
+    <d-demo :code="checkout.disabled" href="http://output.jsbin.com/hekeqil" title="禁用" info="通过设置 disabled 属性来禁用多选框。 1.3.0 开始建议使用 disabled 属性设置禁用。">
       <emfe-checkout :disabled="true" title="EM-FE"></emfe-checkout>
     </d-demo>
     <d-demo :code="checkout.tip" href="http://output.jsbin.com/gicipib" title="提示" info="通过设置 tip 属性。">
@@ -85,8 +85,15 @@ export default {
           default: { text: 'false', row: false },
         },
         {
+          attr: { text: 'disable', desc: false },
+          desc: { text: '是否禁用此多选框。1.3.0 开始建议使用 disabled 。', row: false },
+          type: { text: 'Boolean', row: false },
+          must: { text: 'false', row: false },
+          default: { text: 'false', row: false },
+        },
+        {
           attr: { text: 'disabled', desc: false },
-          desc: { text: '是否禁用此多选框。1.3.0开始支持 disabled， 之前是用 disable', row: false },
+          desc: { text: '是否禁用此多选框。1.3.0 新增。', row: false },
           type: { text: 'Boolean', row: false },
           must: { text: 'false', row: false },
           default: { text: 'false', row: false },
@@ -191,12 +198,12 @@ export default {
         },
         {
           name: { text: 'checked', row: false },
-          desc: { text: '改变选择状态时候触发。1.3.0 之后建议 使用 change', row: false },
+          desc: { text: '改变选择状态时候触发。1.3.0 开始建议使用 change', row: false },
           return: { text: '选则状态，设置的标题(设置的 title 属性)，当前索引(设置的 index 属性)', row: false },
         },
         {
           name: { text: 'change', row: false },
-          desc: { text: '改变选择状态时候触发。1.3.0 之后支持。', row: false },
+          desc: { text: '改变选择状态时候触发。1.3.0 新增。', row: false },
           return: { text: '选则状态，设置的标题(设置的 title 属性)，当前索引(设置的 index 属性)', row: false },
         },
       ],

@@ -33,18 +33,20 @@ export default {
 <script>
   export default {
     data() {
-      return menuData: [
-        {
-          title: '百度',
-          icon: 'fabu',
-          url: 'http://baidu.com',
-        },
-        {
-          title: '腾讯',
-          icon: 'fabu',
-          url: 'http://qq.com',
-        },
-      ],
+      return {
+        menuData: [
+          {
+            title: '百度',
+            icon: 'fabu',
+            url: 'http://baidu.com',
+          },
+          {
+            title: '腾讯',
+            icon: 'fabu',
+            url: 'http://qq.com',
+          },
+        ],
+      };
     },
   },
 </script>`,
