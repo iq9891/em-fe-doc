@@ -131,4 +131,9 @@ export default [
     name: 'Tel',
     component: loadcomponents.load('Tel', 'views', '/doc'),
   },
+  {
+    path: 'textarea',
+    name: 'Textarea',
+    component: loadcomponents.load('Textarea', 'views', '/doc'),
+  },
 ];

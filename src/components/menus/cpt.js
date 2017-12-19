@@ -88,5 +88,9 @@ export default {
       router: { name: 'Tel' },
       title: 'Tel 电话组合',
     },
+    {
+      router: { name: 'Textarea' },
+      title: 'Textarea 多行文本',
+    },
   ],
 };
