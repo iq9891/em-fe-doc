@@ -1,13 +1,11 @@
 <template>
-  <article class="link">
-    <h2 class="h2">Link 链接</h2>
-    <p class="p">用于整个网站的公共超级链接。</p>
+  <article class="imgcode">
+    <h2 class="h2">Imgcode 图片验证码</h2>
+    <p class="p">图片和验证码的组合。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="link.base" href="http://output.jsbin.com/jojoteb" title="基本用法" info="routers 的属性里面配置路由。">
-      <emfe-link :routers="{ name: 'Font' }">去 EM-FE 的字体</emfe-link>
-    </d-demo>
-    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 中设置 url 属性即可">
-      <emfe-link :routers="{ url: 'https://www.evente.cn' }">去活动易</emfe-link>
+    <d-demo :code="imgcode.base" href="http://output.jsbin.com/bominax" title="基本用法" info="click 点击可以换图片，可以数据绑定。">
+      <emfe-imgcode :src="src" v-model="model" @click="click"></emfe-imgcode>
+      <p class="p" v-show="model">您的输入：{{model}}</p>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -17,7 +15,7 @@
       <emfe-table-body slot="body"  v-for="(dataList,index) in propTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
-    <h5 class="h5">事件</h5>
+    <h5 class="h5">方法</h5>
     <emfe-table class="table" :columns="eventTh" :data="eventTd">
       <emfe-table-head  slot="head" >
       </emfe-table-head>
@@ -29,12 +27,14 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import link from '@/views/code/link';
+import imgcode from '@/views/code/imgcode';
 
 export default {
   data() {
     return {
-      link,
+      imgcode,
+      model: '',
+      src: 'https://static.evente.cn/evente/img/flag/v1/mlxy.jpg',
       propTh: [
         {
           title: '属性',
@@ -59,25 +59,18 @@ export default {
       ],
       propTd: [
         {
-          attr: { text: 'tag', desc: false },
-          desc: { text: '设置渲染出来的标签。必须结合 routers 使用。如果是正常的 Vue 的 Router 跳转属性，才能正常渲染 tag 设置的标签。', row: false },
+          attr: { text: 'placeholder', desc: false },
+          desc: { text: '默认提示内容', row: false },
           type: { text: 'String', row: false },
           must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
-          attr: { text: 'routers', desc: false },
-          desc: { text: '设置跳转，支持router里面的属性，外跳属性是 url', row: false },
+          attr: { text: 'src', desc: false },
+          desc: { text: '图片地址', row: false },
           type: { text: 'String', row: false },
           must: { text: 'true', row: false },
           default: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'click', desc: false },
-          desc: { text: '点击事件', row: false },
-          type: { text: 'Function', row: false },
-          must: { text: 'false', row: false },
-          default: { text: 'function(){}', row: false },
         },
         {
           attr: { text: 'className(class-name)', desc: false },
@@ -104,19 +97,29 @@ export default {
       eventTd: [
         {
           attr: { text: 'click', desc: false },
-          desc: { text: '点击触发', row: false },
+          desc: { text: '点击触发。', row: false },
           return: { text: '-', row: false },
+        },
+        {
+          attr: { text: 'blur', desc: false },
+          desc: { text: '失去焦点触发。', row: false },
+          return: { text: '-', row: false },
+        },
+        {
+          attr: { text: 'change', desc: false },
+          desc: { text: '变化触发', row: false },
+          return: { text: '当前值', row: false },
         },
       ],
     };
+  },
+  methods: {
+    click() {
+      this.src = 'https://static.evente.cn/evente/img/flag/v1/de.jpg';
+    },
   },
   components: {
     dDemo: loadcomponents.load('Ddemo'),
   },
 };
 </script>
-
-<!--<style lang="scss">
-// @import "../../assets/styles/views/doc/link.scss";
-</style>
--->

@@ -1,13 +1,11 @@
 <template>
-  <article class="link">
-    <h2 class="h2">Link 链接</h2>
-    <p class="p">用于整个网站的公共超级链接。</p>
+  <article class="textarea">
+    <h2 class="h2">Textarea 多行文本</h2>
+    <p class="p">用 Vue 对 Textarea 的二次封装。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="link.base" href="http://output.jsbin.com/jojoteb" title="基本用法" info="routers 的属性里面配置路由。">
-      <emfe-link :routers="{ name: 'Font' }">去 EM-FE 的字体</emfe-link>
-    </d-demo>
-    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 中设置 url 属性即可">
-      <emfe-link :routers="{ url: 'https://www.evente.cn' }">去活动易</emfe-link>
+    <d-demo :code="textarea.base" href="http://output.jsbin.com/gaseraz" title="数据绑定" info="只需加上 v-model 属性即可。">
+      <emfe-textarea v-model="textareaModel"></emfe-textarea>
+      <p class="p" v-show="textareaModel">您的输入：{{textareaModel}}</p>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -17,7 +15,7 @@
       <emfe-table-body slot="body"  v-for="(dataList,index) in propTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
-    <h5 class="h5">事件</h5>
+    <h5 class="h5">方法</h5>
     <emfe-table class="table" :columns="eventTh" :data="eventTd">
       <emfe-table-head  slot="head" >
       </emfe-table-head>
@@ -29,12 +27,13 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import link from '@/views/code/link';
+import textarea from '@/views/code/textarea';
 
 export default {
   data() {
     return {
-      link,
+      textarea,
+      textareaModel: 'EM-FE',
       propTh: [
         {
           title: '属性',
@@ -59,32 +58,25 @@ export default {
       ],
       propTd: [
         {
-          attr: { text: 'tag', desc: false },
-          desc: { text: '设置渲染出来的标签。必须结合 routers 使用。如果是正常的 Vue 的 Router 跳转属性，才能正常渲染 tag 设置的标签。', row: false },
-          type: { text: 'String', row: false },
-          must: { text: 'false', row: false },
-          default: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'routers', desc: false },
-          desc: { text: '设置跳转，支持router里面的属性，外跳属性是 url', row: false },
-          type: { text: 'String', row: false },
-          must: { text: 'true', row: false },
-          default: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'click', desc: false },
-          desc: { text: '点击事件', row: false },
+          attr: { text: 'blur', desc: false },
+          desc: { text: '失去焦点触发。返回当前值。', row: false },
           type: { text: 'Function', row: false },
           must: { text: 'false', row: false },
           default: { text: 'function(){}', row: false },
         },
         {
-          attr: { text: 'className(class-name)', desc: false },
-          desc: { text: '自定义的 class 名称。', row: false },
-          type: { text: 'String', row: false },
+          attr: { text: 'focus', desc: false },
+          desc: { text: '获取焦点触发。返回当前值。', row: false },
+          type: { text: 'Function', row: false },
           must: { text: 'false', row: false },
-          default: { text: '-', row: false },
+          default: { text: 'function(){}', row: false },
+        },
+        {
+          attr: { text: 'change', desc: false },
+          desc: { text: '变化触发。返回当前值。', row: false },
+          type: { text: 'Function', row: false },
+          must: { text: 'false', row: false },
+          default: { text: 'function(){}', row: false },
         },
       ],
       eventTh: [
@@ -103,9 +95,19 @@ export default {
       ],
       eventTd: [
         {
-          attr: { text: 'click', desc: false },
-          desc: { text: '点击触发', row: false },
-          return: { text: '-', row: false },
+          attr: { text: 'focus', desc: false },
+          desc: { text: '获取焦点触发。', row: false },
+          return: { text: '当前值', row: false },
+        },
+        {
+          attr: { text: 'blur', desc: false },
+          desc: { text: '失去焦点触发。', row: false },
+          return: { text: '当前值', row: false },
+        },
+        {
+          attr: { text: 'change', desc: false },
+          desc: { text: '变化触发', row: false },
+          return: { text: '当前值', row: false },
         },
       ],
     };
@@ -115,8 +117,3 @@ export default {
   },
 };
 </script>
-
-<!--<style lang="scss">
-// @import "../../assets/styles/views/doc/link.scss";
-</style>
--->

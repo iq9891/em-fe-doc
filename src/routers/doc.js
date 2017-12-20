@@ -121,4 +121,34 @@ export default [
     name: 'Select',
     component: loadcomponents.load('Select', 'views', '/doc'),
   },
+  {
+    path: 'switch',
+    name: 'Switch',
+    component: loadcomponents.load('Switch', 'views', '/doc'),
+  },
+  {
+    path: 'tel',
+    name: 'Tel',
+    component: loadcomponents.load('Tel', 'views', '/doc'),
+  },
+  {
+    path: 'textarea',
+    name: 'Textarea',
+    component: loadcomponents.load('Textarea', 'views', '/doc'),
+  },
+  {
+    path: 'imgcode',
+    name: 'Imgcode',
+    component: loadcomponents.load('Imgcode', 'views', '/doc'),
+  },
+  {
+    path: 'smscode',
+    name: 'Smscode',
+    component: loadcomponents.load('Smscode', 'views', '/doc'),
+  },
+  {
+    path: 'table',
+    name: 'Table',
+    component: loadcomponents.load('Table', 'views', '/doc'),
+  },
 ];

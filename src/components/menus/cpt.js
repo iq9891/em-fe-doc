@@ -80,5 +80,29 @@ export default {
       router: { name: 'Select' },
       title: 'Select 下拉框',
     },
+    {
+      router: { name: 'Switch' },
+      title: 'Switch 开关',
+    },
+    {
+      router: { name: 'Tel' },
+      title: 'Tel 电话组合',
+    },
+    {
+      router: { name: 'Textarea' },
+      title: 'Textarea 多行文本',
+    },
+    {
+      router: { name: 'Imgcode' },
+      title: 'Imgcode 图片验证码',
+    },
+    {
+      router: { name: 'Smscode' },
+      title: 'Smscode 短信验证码',
+    },
+    {
+      router: { name: 'Table' },
+      title: 'Table 表格',
+    },
   ],
 };
