@@ -146,4 +146,9 @@ export default [
     name: 'Smscode',
     component: loadcomponents.load('Smscode', 'views', '/doc'),
   },
+  {
+    path: 'table',
+    name: 'Table',
+    component: loadcomponents.load('Table', 'views', '/doc'),
+  },
 ];

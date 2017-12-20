@@ -100,5 +100,9 @@ export default {
       router: { name: 'Smscode' },
       title: 'Smscode 短信验证码',
     },
+    {
+      router: { name: 'Table' },
+      title: 'Table 表格',
+    },
   ],
 };
