@@ -104,5 +104,9 @@ export default {
       router: { name: 'Table' },
       title: 'Table 表格',
     },
+    {
+      router: { name: 'Upload' },
+      title: 'Upload 上传',
+    },
   ],
 };

@@ -151,4 +151,9 @@ export default [
     name: 'Table',
     component: loadcomponents.load('Table', 'views', '/doc'),
   },
+  {
+    path: 'upload',
+    name: 'Upload',
+    component: loadcomponents.load('Upload', 'views', '/doc'),
+  },
 ];
