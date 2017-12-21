@@ -16,22 +16,26 @@
       </ul>
       <h2 class="dmenu-h2">组件</h2>
       <dl class="dmenu-dl">
-        <dt class="dmenu-dt">Base</dt>
+        <dt class="dmenu-dt">Base 基础</dt>
         <dd class="dmenu-dd" v-for="cpt in cpts.base">
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
-      <h2 class="dmenu-h2">导航</h2>
       <dl class="dmenu-dl">
-        <dt class="dmenu-dt">Nav</dt>
+        <dt class="dmenu-dt">Nav 导航</dt>
         <dd class="dmenu-dd" v-for="cpt in cpts.nav">
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
-      <h2 class="dmenu-h2">表单</h2>
       <dl class="dmenu-dl">
-        <dt class="dmenu-dt">Form</dt>
+        <dt class="dmenu-dt">Form 表单</dt>
         <dd class="dmenu-dd" v-for="cpt in cpts.form">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Date 光阴</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.date">
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>

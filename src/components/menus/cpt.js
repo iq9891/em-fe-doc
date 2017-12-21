@@ -109,4 +109,10 @@ export default {
       title: 'Upload 上传',
     },
   ],
+  date: [
+    {
+      router: { name: 'Date' },
+      title: 'Date 日期',
+    },
+  ],
 };

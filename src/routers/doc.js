@@ -156,4 +156,9 @@ export default [
     name: 'Upload',
     component: loadcomponents.load('Upload', 'views', '/doc'),
   },
+  {
+    path: 'date',
+    name: 'Date',
+    component: loadcomponents.load('Date', 'views', '/doc'),
+  },
 ];
