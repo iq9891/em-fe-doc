@@ -3,17 +3,17 @@
     <h2 class="h2">Date 日期</h2>
     <p class="p">日期组件，可设置某一天。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="date.base" href="http://output.jsbin.com/bavurep" title="基本用法" info="只需加上 content 属性即可。" style="z-index: 3">
+    <d-demo :code="date.base" href="http://output.jsbin.com/yeliluw" title="基本用法" info="只需加上 v-model 属性即可。" style="z-index: 5">
       <emfe-date v-model="dateBase"></emfe-date>
       <p class="p" v-show="dateBase">您选择的日期是：{{dateBase}}</p>
     </d-demo>
-    <d-demo :code="date.confirm" href="http://output.jsbin.com/bavurep" title="无确认" info="只需加上 content 属性即可。" style="z-index: 2">
+    <d-demo :code="date.confirm" href="http://output.jsbin.com/bavurep" title="无确认" info="confirm 设置为 false 即可。" style="z-index: 4">
       <emfe-date :confirm="false"></emfe-date>
     </d-demo>
-    <d-demo :code="date.filter" href="http://output.jsbin.com/rarewun" title="筛选" info="设置 disabled-date 回调函数即可 。 筛选条件是今天之前不可选。" style="z-index: 2">
+    <d-demo :code="date.filter" href="http://output.jsbin.com/rarewun" title="筛选" info="设置 disabled-date 回调函数即可 。 筛选条件是今天之前不可选。" style="z-index: 3">
       <emfe-date :disabled-date="disabledOpt"></emfe-date>
     </d-demo>
-    <d-demo :code="date.disabled" href="http://output.jsbin.com/puqihoh" title="禁用" info="设置 disabled 为 ture 。 1.3.0 开始禁用变灰。" style="z-index: 1">
+    <d-demo :code="date.disabled" href="http://output.jsbin.com/puqihoh" title="禁用" info="设置 disabled 为 ture 。 1.3.0 开始禁用变灰。" style="z-index: 2">
       <emfe-date :disabled="true"></emfe-date>
     </d-demo>
     <d-demo :code="date.open" href="http://output.jsbin.com/quvenih" title="直接展示" info="设置 open 为 ture ， confirm 为 false 。" style="z-index: 1">
@@ -150,11 +150,6 @@ export default {
         {
           attr: { text: 'change', desc: false },
           desc: { text: '选中日期触发。 1.3.0 新增。', row: false },
-          return: { text: '日期', row: false },
-        },
-        {
-          attr: { text: 'ok', desc: false },
-          desc: { text: '确定触发。', row: false },
           return: { text: '日期', row: false },
         },
         {

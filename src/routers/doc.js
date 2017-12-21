@@ -161,4 +161,9 @@ export default [
     name: 'Date',
     component: loadcomponents.load('Date', 'views', '/doc'),
   },
+  {
+    path: 'time',
+    name: 'Time',
+    component: loadcomponents.load('Time', 'views', '/doc'),
+  },
 ];

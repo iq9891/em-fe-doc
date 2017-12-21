@@ -114,5 +114,9 @@ export default {
       router: { name: 'Date' },
       title: 'Date 日期',
     },
+    {
+      router: { name: 'Time' },
+      title: 'Time 时间',
+    },
   ],
 };
