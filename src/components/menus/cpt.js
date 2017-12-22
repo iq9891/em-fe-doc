@@ -109,7 +109,7 @@ export default {
       title: 'Upload 上传',
     },
   ],
-  date: [
+  picker: [
     {
       router: { name: 'Date' },
       title: 'Date 日期',
@@ -121,6 +121,50 @@ export default {
     {
       router: { name: 'Datetime' },
       title: 'Datetime 日期时间',
+    },
+  ],
+  board: [
+    {
+      router: { name: 'Panel' },
+      title: 'Panel 面板',
+    },
+    {
+      router: { name: 'Datapanel' },
+      title: 'Datapanel 数据面板',
+    },
+    {
+      router: { name: 'Colorpicker' },
+      title: 'Color 颜色选择器',
+    },
+  ],
+  other: [
+    {
+      router: { name: 'Edit' },
+      title: 'Edit 二级类目',
+    },
+    {
+      router: { name: 'Copy' },
+      title: 'Copy 复制',
+    },
+    {
+      router: { name: 'Countdown' },
+      title: 'Countdown 倒计时',
+    },
+    {
+      router: { name: 'Number' },
+      title: 'Number 数字',
+    },
+    {
+      router: { name: 'Changecount' },
+      title: 'Changecount 数字动效',
+    },
+    {
+      router: { name: 'Opations' },
+      title: 'Opations 选择拖拽',
+    },
+    {
+      router: { name: 'Slide' },
+      title: 'Slide 滑动选择',
     },
   ],
 };

@@ -171,4 +171,54 @@ export default [
     name: 'Datetime',
     component: loadcomponents.load('Datetime', 'views', '/doc'),
   },
+  {
+    path: 'panel',
+    name: 'Panel',
+    component: loadcomponents.load('Panel', 'views', '/doc'),
+  },
+  {
+    path: 'datapanel',
+    name: 'Datapanel',
+    component: loadcomponents.load('Datapanel', 'views', '/doc'),
+  },
+  {
+    path: 'edit',
+    name: 'Edit',
+    component: loadcomponents.load('Edit', 'views', '/doc'),
+  },
+  {
+    path: 'copy',
+    name: 'Copy',
+    component: loadcomponents.load('Copy', 'views', '/doc'),
+  },
+  {
+    path: 'countdown',
+    name: 'Countdown',
+    component: loadcomponents.load('Countdown', 'views', '/doc'),
+  },
+  {
+    path: 'number',
+    name: 'Number',
+    component: loadcomponents.load('Number', 'views', '/doc'),
+  },
+  {
+    path: 'changecount',
+    name: 'Changecount',
+    component: loadcomponents.load('Changecount', 'views', '/doc'),
+  },
+  {
+    path: 'opations',
+    name: 'Opations',
+    component: loadcomponents.load('Opations', 'views', '/doc'),
+  },
+  {
+    path: 'colorpicker',
+    name: 'Colorpicker',
+    component: loadcomponents.load('Colorpicker', 'views', '/doc'),
+  },
+  {
+    path: 'slide',
+    name: 'Slide',
+    component: loadcomponents.load('Slide', 'views', '/doc'),
+  },
 ];

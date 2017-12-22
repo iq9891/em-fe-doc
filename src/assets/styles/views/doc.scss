@@ -16,7 +16,7 @@
     min-height: 100%;
 
     &-box {
-      width: 80%;
+      width: calc(100% - 210px);
       overflow: auto;
       height: 100%;
     }

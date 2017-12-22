@@ -99,6 +99,13 @@ export default {
           must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
+        {
+          attr: { text: 'change', desc: false },
+          desc: { text: '开关改变。返回：开关状态。 1.3.0 新增。', row: false },
+          type: { text: 'Function', row: false },
+          must: { text: 'false', row: false },
+          default: { text: 'function(){}', row: false },
+        },
       ],
       eventTh: [
         {
