@@ -131,4 +131,24 @@ export default {
 </script>`,
   disabled: `
 <emfe-select :datas="[]" :disabled="true"></emfe-select>`,
+  direction: `
+<template>
+  <emfe-select :datas="direction" direction="top"></emfe-select>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        direction: [
+          {
+            name: '向上文字1',
+          },
+          {
+            name: '向上文字2',
+          },
+        ],
+      };
+    },
+  },
+</script>`,
 };

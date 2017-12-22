@@ -109,7 +109,7 @@ export default {
       title: 'Upload 上传',
     },
   ],
-  date: [
+  picker: [
     {
       router: { name: 'Date' },
       title: 'Date 日期',
@@ -121,6 +121,12 @@ export default {
     {
       router: { name: 'Datetime' },
       title: 'Datetime 日期时间',
+    },
+  ],
+  board: [
+    {
+      router: { name: 'Panel' },
+      title: 'Panel 面板',
     },
   ],
 };

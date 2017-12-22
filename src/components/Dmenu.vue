@@ -34,8 +34,14 @@
         </dd>
       </dl>
       <dl class="dmenu-dl">
-        <dt class="dmenu-dt">Date 光阴</dt>
-        <dd class="dmenu-dd" v-for="cpt in cpts.date">
+        <dt class="dmenu-dt">Picker 选择器</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.picker">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Board 板子</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.board">
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>

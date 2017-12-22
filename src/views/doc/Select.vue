@@ -26,6 +26,9 @@
     <d-demo :code="select.disabled" href="http://output.jsbin.com/heciroc" title="禁用" info="通过 disabled 的属性设置。">
       <emfe-select :datas="[]" :disabled="true"></emfe-select>
     </d-demo>
+    <d-demo :code="select.direction" href="http://output.jsbin.com/fuhesuf" title="向上" info="通过 direction 的属性设置。 1.3.0 新增。">
+      <emfe-select :datas="direction" direction="top"></emfe-select>
+    </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
     <emfe-table class="table" :columns="propTh" :data="propTd">
@@ -110,6 +113,14 @@ export default {
           name: '提示文字2',
         },
       ],
+      direction: [
+        {
+          name: '向上文字1',
+        },
+        {
+          name: '向上文字2',
+        },
+      ],
       propTh: [
         {
           title: '属性',
@@ -181,6 +192,13 @@ export default {
           type: { text: 'String | Number', row: false },
           must: { text: 'false', row: false },
           default: { text: '选择标签', row: false },
+        },
+        {
+          attr: { text: 'direction', desc: false },
+          desc: { text: '设置选择框的方向。可选参数： top | bottom 。 1.3.0 新增。', row: false },
+          type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
+          default: { text: 'bottom', row: false },
         },
         {
           attr: { text: 'errOk(err-ok)', desc: false },

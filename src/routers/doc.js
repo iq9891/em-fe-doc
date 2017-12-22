@@ -171,4 +171,9 @@ export default [
     name: 'Datetime',
     component: loadcomponents.load('Datetime', 'views', '/doc'),
   },
+  {
+    path: 'panel',
+    name: 'Panel',
+    component: loadcomponents.load('Panel', 'views', '/doc'),
+  },
 ];
