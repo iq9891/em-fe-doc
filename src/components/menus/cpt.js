@@ -138,5 +138,9 @@ export default {
       router: { name: 'Edit' },
       title: 'Edit 二级类目',
     },
+    {
+      router: { name: 'Copy' },
+      title: 'Copy 复制',
+    },
   ],
 };

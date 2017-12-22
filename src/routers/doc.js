@@ -186,4 +186,9 @@ export default [
     name: 'Edit',
     component: loadcomponents.load('Edit', 'views', '/doc'),
   },
+  {
+    path: 'copy',
+    name: 'Copy',
+    component: loadcomponents.load('Copy', 'views', '/doc'),
+  },
 ];
