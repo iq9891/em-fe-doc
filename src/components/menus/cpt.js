@@ -167,4 +167,10 @@ export default {
       title: 'Slide 滑动选择',
     },
   ],
+  tip: [
+    {
+      router: { name: 'Tooltip' },
+      title: 'Tooltip 文字提示',
+    },
+  ],
 };

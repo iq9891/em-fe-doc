@@ -221,4 +221,9 @@ export default [
     name: 'Slide',
     component: loadcomponents.load('Slide', 'views', '/doc'),
   },
+  {
+    path: 'tooltip',
+    name: 'Tooltip',
+    component: loadcomponents.load('Tooltip', 'views', '/doc'),
+  },
 ];

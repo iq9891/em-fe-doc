@@ -51,6 +51,12 @@
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Tip 提示</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.tip">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
     </div>
   </div>
 </template>
