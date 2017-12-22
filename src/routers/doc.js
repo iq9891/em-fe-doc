@@ -191,4 +191,9 @@ export default [
     name: 'Copy',
     component: loadcomponents.load('Copy', 'views', '/doc'),
   },
+  {
+    path: 'countdown',
+    name: 'Countdown',
+    component: loadcomponents.load('Countdown', 'views', '/doc'),
+  },
 ];

@@ -1,7 +1,7 @@
 <template>
   <article class="copy">
     <h2 class="h2">Copy 复制</h2>
-    <p class="p">可以添加，可以删除，可以一层套一层。</p>
+    <p class="p">可以复制一段内容到剪切板。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="copy.base" href="http://output.jsbin.com/gicipib" title="基本用法" info="通过回调函数检测是否成功。">
       <emfe-copy copy-value="http://www.evente.cn" @copySuccess="copySuc" @copyFail="copyFail"></emfe-copy>

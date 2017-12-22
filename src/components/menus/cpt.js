@@ -142,5 +142,9 @@ export default {
       router: { name: 'Copy' },
       title: 'Copy 复制',
     },
+    {
+      router: { name: 'Countdown' },
+      title: 'Countdown 倒计时',
+    },
   ],
 };
