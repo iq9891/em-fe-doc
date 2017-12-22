@@ -181,4 +181,9 @@ export default [
     name: 'Datapanel',
     component: loadcomponents.load('Datapanel', 'views', '/doc'),
   },
+  {
+    path: 'edit',
+    name: 'Edit',
+    component: loadcomponents.load('Edit', 'views', '/doc'),
+  },
 ];

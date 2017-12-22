@@ -133,4 +133,10 @@ export default {
       title: 'Datapanel 数据面板',
     },
   ],
+  other: [
+    {
+      router: { name: 'Edit' },
+      title: 'Edit 二级类目',
+    },
+  ],
 };
