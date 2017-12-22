@@ -196,4 +196,14 @@ export default [
     name: 'Countdown',
     component: loadcomponents.load('Countdown', 'views', '/doc'),
   },
+  {
+    path: 'number',
+    name: 'Number',
+    component: loadcomponents.load('Number', 'views', '/doc'),
+  },
+  {
+    path: 'changecount',
+    name: 'Changecount',
+    component: loadcomponents.load('Changecount', 'views', '/doc'),
+  },
 ];

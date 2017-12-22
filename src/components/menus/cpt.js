@@ -146,5 +146,13 @@ export default {
       router: { name: 'Countdown' },
       title: 'Countdown 倒计时',
     },
+    {
+      router: { name: 'Number' },
+      title: 'Number 数字',
+    },
+    {
+      router: { name: 'Changecount' },
+      title: 'Changecount 数字动效',
+    },
   ],
 };
