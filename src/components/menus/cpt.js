@@ -172,5 +172,9 @@ export default {
       router: { name: 'Tooltip' },
       title: 'Tooltip 文字提示',
     },
+    {
+      router: { name: 'Modal' },
+      title: 'Modal 对话框',
+    },
   ],
 };

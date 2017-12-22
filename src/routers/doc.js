@@ -226,4 +226,9 @@ export default [
     name: 'Tooltip',
     component: loadcomponents.load('Tooltip', 'views', '/doc'),
   },
+  {
+    path: 'modal',
+    name: 'Modal',
+    component: loadcomponents.load('Modal', 'views', '/doc'),
+  },
 ];

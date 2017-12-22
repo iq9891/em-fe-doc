@@ -76,7 +76,7 @@ export default {
         {
           attr: { text: 'theme', desc: false },
           desc: { text: '主题设置。可选参数： dark | light 。', row: false },
-          type: { text: 'String | Boolean', row: false },
+          type: { text: 'String', row: false },
           must: { text: 'false', row: false },
           default: { text: 'dark', row: false },
         },
