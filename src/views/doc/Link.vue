@@ -115,8 +115,3 @@ export default {
   },
 };
 </script>
-
-<!--<style lang="scss">
-// @import "../../assets/styles/views/doc/link.scss";
-</style>
--->

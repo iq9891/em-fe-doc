@@ -1,9 +1,9 @@
 export default {
   base: `
-<emfe-slide :percent="78" maxPercent="100" slideLeft="小" slideRight="大"></emfe-slide>`,
+<emfe-slide :percent="78" max-percent="100" slide-left="小" slide-right="大"></emfe-slide>`,
   scale: `
 <template>
-  <emfe-slide :percent="30" maxPercent="100" slideLeft="小" slideRight="大" @change="scaleChange"></emfe-slide>
+  <emfe-slide :percent="30" max-percent="100" slide-left="小" slide-right="大" @change="scaleChange"></emfe-slide>
 </template>
 <script>
 

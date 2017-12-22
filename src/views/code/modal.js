@@ -31,9 +31,8 @@ export default {
     },
   },
 </script>`,
-  base: `
+  tip: `
 <template>
-  <emfe-button @click="modalBtn">我是弹框</emfe-button>
   <emfe-button @click="tipBtn">我是弹框</emfe-button>
   <emfe-modal :show="tipShow" title="我是提示框" @close="tipClose" @cancel="tipClose" @ok="tipClose" okText="保存" :cancelFlg="false" :tip="true">
     <div slot="modal-main">

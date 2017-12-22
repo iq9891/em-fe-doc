@@ -176,5 +176,13 @@ export default {
       router: { name: 'Modal' },
       title: 'Modal 对话框',
     },
+    {
+      router: { name: 'Hottip' },
+      title: 'Hottip 公告',
+    },
+    {
+      router: { name: 'Drag' },
+      title: 'Drag 拖拽',
+    },
   ],
 };

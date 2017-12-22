@@ -3,8 +3,8 @@
     <h2 class="h2">Tooltip 文字提示</h2>
     <p class="p">简单的滑动提示。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="tooltip.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="提示内容可以嵌套任何东西。">
-      <emfe-tooltip>
+    <d-demo :code="tooltip.base" href="http://output.jsbin.com/qenojiy" title="基本用法" info="提示内容可以嵌套任何东西。">
+      <emfe-tooltip placement="bottom">
         <emfe-button slot="render">这是一个带提示的按钮</emfe-button>
         <div slot="tip">
           <p>EM-FE 的组件</p>
@@ -12,13 +12,13 @@
         </div>
       </emfe-tooltip>
     </d-demo>
-    <d-demo :code="tooltip.set" href="http://output.jsbin.com/mebebor" title="设置距离和方向" info="改变与操作区域的距离和方向。">
-      <emfe-tooltip offset="40" theme="light" placement="right">
+    <d-demo :code="tooltip.set" href="http://output.jsbin.com/cahumuv" title="设置距离和方向" info="改变与操作区域的距离和方向。">
+      <emfe-tooltip offset="40" theme="light" placement="bottom">
         <emfe-button slot="render">这是一个带提示的按钮</emfe-button>
         <div slot="tip">EM-FE 的组件</div>
       </emfe-tooltip>
     </d-demo>
-    <d-demo :code="tooltip.delay" href="http://output.jsbin.com/mebebor" title="延时" info="延时 1 秒。">
+    <d-demo :code="tooltip.delay" href="http://output.jsbin.com/tunenar" title="延时" info="延时 1 秒。" placement="bottom">
       <emfe-tooltip delay="1000">
         <emfe-button slot="render">这是一个带提示的按钮</emfe-button>
         <div slot="tip">EM-FE 的组件</div>

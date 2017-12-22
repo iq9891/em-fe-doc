@@ -3,11 +3,11 @@
     <h2 class="h2">Slide 滑动选择</h2>
     <p class="p">滑动方块选择相应数值。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="slide.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="通过回调函数检测是否成功。">
-      <emfe-slide :percent="78" maxPercent="100" slideLeft="小" slideRight="大"></emfe-slide>
+    <d-demo :code="slide.base" href="http://output.jsbin.com/kojoyus" title="基本用法" info="通过回调函数检测是否成功。">
+      <emfe-slide :percent="78" max-percent="100" slide-left="小" slide-right="大"></emfe-slide>
     </d-demo>
-    <d-demo :code="slide.scale" href="http://output.jsbin.com/mebebor" title="换算比例" info="根据一个特定比例值换算。">
-      <emfe-slide :percent="30" maxPercent="100" slideLeft="小" slideRight="大" @change="scaleChange"></emfe-slide>
+    <d-demo :code="slide.scale" href="http://output.jsbin.com/matezot" title="换算比例" info="根据一个特定比例值换算。">
+      <emfe-slide :percent="30" max-percent="100" slide-left="小" slide-right="大" @change="scaleChange"></emfe-slide>
       <p class="p" v-show="scale">您选择的比例是：{{scale}}</p>
     </d-demo>
     <h4 class="h4">API</h4>

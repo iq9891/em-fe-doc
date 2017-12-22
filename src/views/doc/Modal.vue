@@ -3,7 +3,7 @@
     <h2 class="h2">Modal 对话框</h2>
     <p class="p">简单的滑动提示。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="modal.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="提示内容可以嵌套任何东西。" :style="{'z-index': modalIndex}">
+    <d-demo :code="modal.base" href="http://output.jsbin.com/badohuj" title="基本用法" info="提示内容可以嵌套任何东西。" :style="{'z-index': modalIndex}">
       <emfe-button @click="modalBtn">我是弹框</emfe-button>
       <emfe-modal :show="modalShow" title="我是提示框" @close="modalClose" @cancel="modalClose" @ok="modalClose" okText="保存">
         <div slot="modal-main">
@@ -14,7 +14,7 @@
         </div>
       </emfe-modal>
     </d-demo>
-    <d-demo :code="modal.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="提示内容可以嵌套任何东西。" :style="{'z-index': tipIndex}">
+    <d-demo :code="modal.tip" href="http://output.jsbin.com/yufisar" title="基本用法" info="提示内容可以嵌套任何东西。" :style="{'z-index': tipIndex}">
       <emfe-button @click="tipBtn">我是弹框</emfe-button>
       <emfe-modal :show="tipShow" title="我是提示框" @close="tipClose" @cancel="tipClose" @ok="tipClose" okText="保存" :cancelFlg="false" :tip="true">
         <div slot="modal-main">

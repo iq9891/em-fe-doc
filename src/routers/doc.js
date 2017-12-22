@@ -231,4 +231,14 @@ export default [
     name: 'Modal',
     component: loadcomponents.load('Modal', 'views', '/doc'),
   },
+  {
+    path: 'hottip',
+    name: 'Hottip',
+    component: loadcomponents.load('Hottip', 'views', '/doc'),
+  },
+  {
+    path: 'drag',
+    name: 'Drag',
+    component: loadcomponents.load('Drag', 'views', '/doc'),
+  },
 ];
