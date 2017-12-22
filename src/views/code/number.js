@@ -8,7 +8,7 @@ export default {
     data() {
       return {
         base: 10,
-      },
+      };
     },
   },
 </script>`,

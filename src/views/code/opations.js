@@ -1,13 +1,13 @@
 export default {
   base: `
 <template>
-  <emfe-changecount :count="base"></emfe-changecount>
+  <emfe-opations v-model="opationsData"></emfe-opations>
 </template>
 <script>
   export default {
     data() {
       return {
-        base: 1998,
+        opationsData: ['1', '2', ''],
       };
     },
   },

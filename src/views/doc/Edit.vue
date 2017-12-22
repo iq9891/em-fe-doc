@@ -3,7 +3,7 @@
     <h2 class="h2">Edit 二级类目</h2>
     <p class="p">可以添加，可以删除，可以一层套一层。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="edit.base" href="http://output.jsbin.com/gicipib" title="基本用法" info="可以设置各种东西。">
+    <d-demo :code="edit.base" href="http://output.jsbin.com/yarenac" title="基本用法" info="可以设置各种东西。">
       <emfe-edit :one-list="oneList" :add-one-obj="addOneObj" one-placeholder="一级选项提示" two-placeholder="二级选项提示" :add-two-obj="addTwoObj"></emfe-edit>
     </d-demo>
     <h4 class="h4">API</h4>

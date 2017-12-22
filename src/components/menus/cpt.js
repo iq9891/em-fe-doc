@@ -132,6 +132,10 @@ export default {
       router: { name: 'Datapanel' },
       title: 'Datapanel 数据面板',
     },
+    {
+      router: { name: 'Colorpicker' },
+      title: 'Color 颜色选择器',
+    },
   ],
   other: [
     {
@@ -153,6 +157,14 @@ export default {
     {
       router: { name: 'Changecount' },
       title: 'Changecount 数字动效',
+    },
+    {
+      router: { name: 'Opations' },
+      title: 'Opations 选择拖拽',
+    },
+    {
+      router: { name: 'Slide' },
+      title: 'Slide 滑动选择',
     },
   ],
 };

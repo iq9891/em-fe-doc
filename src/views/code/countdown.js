@@ -14,7 +14,7 @@ export default {
       const date = new Date();
       return {
         time: \`\${date.getFullYear()}-\${date.getMonth() + 2}-\${date.getDate()} \${date.getHours()}:\${date.getMinutes()}:\${date.getSeconds()}\`,
-      },
+      };
     },
   },
 </script>`,

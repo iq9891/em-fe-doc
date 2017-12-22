@@ -3,7 +3,7 @@
     <h2 class="h2">Changecount 数字动效</h2>
     <p class="p">通过上下滚动改变数字。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="changecount.base" href="http://output.jsbin.com/gicipib" title="基本用法" info="用 count 设置个数。">
+    <d-demo :code="changecount.base" href="http://output.jsbin.com/nuxope" title="基本用法" info="用 count 设置个数。">
       <emfe-changecount :count="base"></emfe-changecount>
     </d-demo>
     <h4 class="h4">API</h4>

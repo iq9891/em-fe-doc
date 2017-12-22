@@ -1,13 +1,13 @@
 export default {
   base: `
 <template>
-  <emfe-changecount :count="base"></emfe-changecount>
+  <emfe-color v-model="color"></emfe-color>
 </template>
 <script>
   export default {
     data() {
       return {
-        base: 1998,
+        color: '00ff00',
       };
     },
   },

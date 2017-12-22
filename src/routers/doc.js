@@ -206,4 +206,19 @@ export default [
     name: 'Changecount',
     component: loadcomponents.load('Changecount', 'views', '/doc'),
   },
+  {
+    path: 'opations',
+    name: 'Opations',
+    component: loadcomponents.load('Opations', 'views', '/doc'),
+  },
+  {
+    path: 'colorpicker',
+    name: 'Colorpicker',
+    component: loadcomponents.load('Colorpicker', 'views', '/doc'),
+  },
+  {
+    path: 'slide',
+    name: 'Slide',
+    component: loadcomponents.load('Slide', 'views', '/doc'),
+  },
 ];

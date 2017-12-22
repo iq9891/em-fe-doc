@@ -1,16 +1,11 @@
 <template>
-  <article class="number">
-    <h2 class="h2">Number 数字</h2>
-    <p class="p">可以改变数字的大小。</p>
+  <article class="color">
+    <h2 class="h2">Color 颜色选择器</h2>
+    <p class="p">选择您想选择的任意颜色。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="number.base" href="http://output.jsbin.com/kicuxow" title="基本用法" info="v-model 使用。">
-      <emfe-number v-model="base"></emfe-number>
-    </d-demo>
-    <d-demo :code="number.limit" href="http://output.jsbin.com/valesiw" title="限制" info="使用 max | min 设置 最大 | 最小值。 使用 unit 设置单位。">
-      <emfe-number :min="-1" :max="10" unit="个"></emfe-number>
-    </d-demo>
-    <d-demo :code="number.diy" href="http://output.jsbin.com/yunuzet" title="自定义" info="disabled 设置为 false 。使用 step 设置增减步伐。">
-      <emfe-number :disabled="false" :step="0.12"></emfe-number>
+    <d-demo :code="colorCode.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="通过回调函数检测是否成功。">
+      <emfe-color v-model="color"></emfe-color>
+      <p class="p" v-show="color">{{color}}是您选择的颜色。</p>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -32,13 +27,14 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import number from '@/views/code/number';
+import colorCode from '@/views/code/colorpicker';
 
 export default {
   data() {
     return {
-      number,
-      base: 10,
+      colorCode,
+      color: '00ff00',
+      status: '',
       propTh: [
         {
           title: '属性',
@@ -63,39 +59,18 @@ export default {
       ],
       propTd: [
         {
-          attr: { text: 'unit', desc: false },
-          desc: { text: '自定义单位。', row: false },
+          attr: { text: 'btnText', desc: false },
+          desc: { text: '打开颜色选择器的按钮文案。', row: false },
           type: { text: 'String', row: false },
           must: { text: 'false', row: false },
-          default: { text: '-', row: false },
+          default: { text: '打开', row: false },
         },
         {
-          attr: { text: 'max', desc: false },
-          desc: { text: '最大值。', row: false },
-          type: { text: 'Number', row: false },
+          attr: { text: 'subText', desc: false },
+          desc: { text: '关闭颜色选择器按钮的文案', row: false },
+          type: { text: 'String', row: false },
           must: { text: 'false', row: false },
-          default: { text: 'Infinity', row: false },
-        },
-        {
-          attr: { text: 'min', desc: false },
-          desc: { text: '最小值。', row: false },
-          type: { text: 'Number', row: false },
-          must: { text: 'false', row: false },
-          default: { text: '-Infinity', row: false },
-        },
-        {
-          attr: { text: 'step', desc: false },
-          desc: { text: '每次改变的步伐，可以是小数。', row: false },
-          type: { text: 'Number', row: false },
-          must: { text: 'false', row: false },
-          default: { text: '5', row: false },
-        },
-        {
-          attr: { text: 'disabled', desc: false },
-          desc: { text: '可否自定义数值。true -> 不可以。', row: false },
-          type: { text: 'Boolean', row: false },
-          must: { text: 'false', row: false },
-          default: { text: 'true', row: false },
+          default: { text: '确定', row: false },
         },
         {
           attr: { text: 'className(class-name)', desc: false },
@@ -121,12 +96,35 @@ export default {
       ],
       eventTd: [
         {
+          attr: { text: 'close', desc: false },
+          desc: { text: '关闭颜色选择器', row: false },
+          return: { text: 'hex 格式颜色值', row: false },
+        },
+        {
+          attr: { text: 'ok', desc: false },
+          desc: { text: '确定按钮触发', row: false },
+          return: { text: 'hex 格式颜色值', row: false },
+        },
+        {
           attr: { text: 'change', desc: false },
-          desc: { text: '加减按钮触发。', row: false },
-          return: { text: '新值，旧值', row: false },
+          desc: { text: '改变颜色触发', row: false },
+          return: { text: 'hex 格式颜色值', row: false },
         },
       ],
     };
+  },
+  methods: {
+    ok(color) {
+      this.color = color;
+      this.status = '确定';
+    },
+    cancel() {
+      this.status = '取消';
+    },
+    change(color) {
+      this.ok(color);
+      this.status = '移动中';
+    },
   },
   components: {
     dDemo: loadcomponents.load('Ddemo'),

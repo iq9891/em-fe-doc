@@ -1,10 +1,14 @@
 <template>
-  <article class="copy">
-    <h2 class="h2">Copy 复制</h2>
-    <p class="p">可以复制一段内容到剪切板。</p>
+  <article class="slide">
+    <h2 class="h2">Slide 滑动选择</h2>
+    <p class="p">滑动方块选择相应数值。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="copy.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="通过回调函数检测是否成功。">
-      <emfe-copy copy-value="http://www.evente.cn" @copySuccess="copySuc" @copyFail="copyFail"></emfe-copy>
+    <d-demo :code="slide.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="通过回调函数检测是否成功。">
+      <emfe-slide :percent="78" maxPercent="100" slideLeft="小" slideRight="大"></emfe-slide>
+    </d-demo>
+    <d-demo :code="slide.scale" href="http://output.jsbin.com/mebebor" title="换算比例" info="根据一个特定比例值换算。">
+      <emfe-slide :percent="30" maxPercent="100" slideLeft="小" slideRight="大" @change="scaleChange"></emfe-slide>
+      <p class="p" v-show="scale">您选择的比例是：{{scale}}</p>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -26,12 +30,15 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import copy from '@/views/code/copy';
+import slide from '@/views/code/slide';
+
+const step = 10;
 
 export default {
   data() {
     return {
-      copy,
+      slide,
+      scale: 12,
       propTh: [
         {
           title: '属性',
@@ -56,36 +63,36 @@ export default {
       ],
       propTd: [
         {
-          attr: { text: 'read', desc: false },
-          desc: { text: '复制的内容是否只读。', row: false },
-          type: { text: 'String | Boolean', row: false },
+          attr: { text: 'percent', desc: false },
+          desc: { text: '进度条进度的value值。', row: false },
+          type: { text: 'Number', row: false },
           must: { text: 'false', row: false },
-          default: { text: 'true', row: false },
+          default: { text: '-', row: false },
         },
         {
-          attr: { text: 'title', desc: false },
-          desc: { text: '复制按钮悬浮的提示文字。', row: false },
-          type: { text: 'String', row: false },
-          must: { text: 'false', row: false },
-          default: { text: '复制网址', row: false },
-        },
-        {
-          attr: { text: 'text', desc: false },
-          desc: { text: '黑色的提示文字。', row: false },
-          type: { text: 'String', row: false },
-          must: { text: 'false', row: false },
-          default: { text: '表单页面：', row: false },
-        },
-        {
-          attr: { text: 'copyValue(copy-value)', desc: false },
-          desc: { text: '复制的内容。', row: false },
+          attr: { text: 'maxPercent( max-percent )', desc: false },
+          desc: { text: '进度条最大值。', row: false },
           type: { text: 'String', row: false },
           must: { text: 'false', row: false },
           default: { text: '-', row: false },
         },
         {
-          attr: { text: 'className(class-name)', desc: false },
-          desc: { text: '自定义的 class 名称。', row: false },
+          attr: { text: 'slideWidth', desc: false },
+          desc: { text: '进度条的宽度。', row: false },
+          type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
+          default: { text: '-', row: false },
+        },
+        {
+          attr: { text: 'slideLeft', desc: false },
+          desc: { text: '进度条的左边描述。', row: false },
+          type: { text: 'String', row: false },
+          must: { text: 'false', row: false },
+          default: { text: '-', row: false },
+        },
+        {
+          attr: { text: 'slideRight', desc: false },
+          desc: { text: '进度条的右边描述。', row: false },
           type: { text: 'String', row: false },
           must: { text: 'false', row: false },
           default: { text: '-', row: false },
@@ -107,38 +114,17 @@ export default {
       ],
       eventTd: [
         {
-          attr: { text: 'copySuccess', desc: false },
-          desc: { text: '复制成功。 1.3.0 开始建议使用 success 方法。', row: false },
-          return: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'copyFail', desc: false },
-          desc: { text: '复制失败。 1.3.0 开始建议使用 error 方法。', row: false },
-          return: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'success', desc: false },
-          desc: { text: '复制成功。 1.3.0 新增。', row: false },
-          return: { text: '-', row: false },
-        },
-        {
-          attr: { text: 'error', desc: false },
-          desc: { text: '复制失败。 1.3.0 新增。', row: false },
-          return: { text: '-', row: false },
+          attr: { text: 'change', desc: false },
+          desc: { text: '拖动滑块触发。', row: false },
+          return: { text: '滑动元素和距离左边的距离', row: false },
         },
       ],
     };
   },
   methods: {
-    copySuc() {
-      this.$EmfeMessage.success({
-        content: '复制成功',
-      });
-    },
-    copyFail() {
-      this.$EmfeMessage.error({
-        content: '复制失败',
-      });
+    scaleChange(val) {
+      const scale = val * 0.01;
+      this.scale = (scale * step) + step;
     },
   },
   components: {
