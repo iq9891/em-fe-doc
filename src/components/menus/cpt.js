@@ -128,5 +128,9 @@ export default {
       router: { name: 'Panel' },
       title: 'Panel 面板',
     },
+    {
+      router: { name: 'Datapanel' },
+      title: 'Datapanel 数据面板',
+    },
   ],
 };

@@ -176,4 +176,9 @@ export default [
     name: 'Panel',
     component: loadcomponents.load('Panel', 'views', '/doc'),
   },
+  {
+    path: 'datapanel',
+    name: 'Datapanel',
+    component: loadcomponents.load('Datapanel', 'views', '/doc'),
+  },
 ];
