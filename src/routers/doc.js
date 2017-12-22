@@ -151,4 +151,24 @@ export default [
     name: 'Table',
     component: loadcomponents.load('Table', 'views', '/doc'),
   },
+  {
+    path: 'upload',
+    name: 'Upload',
+    component: loadcomponents.load('Upload', 'views', '/doc'),
+  },
+  {
+    path: 'date',
+    name: 'Date',
+    component: loadcomponents.load('Date', 'views', '/doc'),
+  },
+  {
+    path: 'time',
+    name: 'Time',
+    component: loadcomponents.load('Time', 'views', '/doc'),
+  },
+  {
+    path: 'datetime',
+    name: 'Datetime',
+    component: loadcomponents.load('Datetime', 'views', '/doc'),
+  },
 ];

@@ -65,35 +65,35 @@
     <h4 class="h4">API</h4>
     <h5 class="h5">emfe-table 属性</h5>
     <emfe-table class="table" :columns="propTableTh" :data="propTableTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in propTableTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">emfe-table-head 属性</h5>
     <emfe-table class="table" :columns="propHeadTh" :data="propHeadTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in propHeadTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">emfe-table-head 事件</h5>
     <emfe-table class="table" :columns="eventHeadTh" :data="eventHeadTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in eventHeadTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">emfe-table-body 属性</h5>
     <emfe-table class="table" :columns="propBodyTh" :data="propBodyTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in propBodyTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">emfe-table-body 事件</h5>
     <emfe-table class="table" :columns="eventBodyTh" :data="eventBodyTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in eventBodyTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>

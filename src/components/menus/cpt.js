@@ -104,5 +104,23 @@ export default {
       router: { name: 'Table' },
       title: 'Table 表格',
     },
+    {
+      router: { name: 'Upload' },
+      title: 'Upload 上传',
+    },
+  ],
+  date: [
+    {
+      router: { name: 'Date' },
+      title: 'Date 日期',
+    },
+    {
+      router: { name: 'Time' },
+      title: 'Time 时间',
+    },
+    {
+      router: { name: 'Datetime' },
+      title: 'Datetime 日期时间',
+    },
   ],
 };
