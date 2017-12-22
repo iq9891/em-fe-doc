@@ -149,14 +149,14 @@
     <h4 class="h4">API</h4>
     <h5 class="h5">emfe-row 的 属性</h5>
     <emfe-table class="table" :columns="rowTh" :data="rowTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in rowTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">emfe-col 的 属性</h5>
     <emfe-table class="table" :columns="colTh" :data="colTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in colTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>

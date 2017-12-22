@@ -22,14 +22,14 @@
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
     <emfe-table class="table" :columns="propTh" :data="propTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in propTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
     </emfe-table>
     <h5 class="h5">方法</h5>
     <emfe-table class="table" :columns="eventTh" :data="eventTd">
-      <emfe-table-head  slot="head" >
+      <emfe-table-head slot="head">
       </emfe-table-head>
       <emfe-table-body slot="body"  v-for="(dataList,index) in eventTd" :ind="index" :key="index" :dataList="dataList">
       </emfe-table-body>
@@ -164,7 +164,7 @@ export default {
         },
         {
           attr: { text: 'cancel', desc: false },
-          desc: { text: '取消( 点击红叉子 )触发。', row: false },
+          desc: { text: '取消( 点击红叉子 )触发。 1.3.0 开始，数据为空，并且 v-model 为空。 1.3.0 之前返回默认提示文案。', row: false },
           return: { text: '日期', row: false },
         },
       ],
