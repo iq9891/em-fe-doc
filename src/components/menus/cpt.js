@@ -158,6 +158,34 @@ export default {
       router: { name: 'Changecount' },
       title: 'Changecount 数字动效',
     },
+  ],
+  tip: [
+    {
+      router: { name: 'Tooltip' },
+      title: 'Tooltip 文字提示',
+    },
+    {
+      router: { name: 'Modal' },
+      title: 'Modal 对话框',
+    },
+    {
+      router: { name: 'Hottip' },
+      title: 'Hottip 公告',
+    },
+    {
+      router: { name: 'Message' },
+      title: 'Message 全局提示',
+    },
+  ],
+  drag: [
+    {
+      router: { name: 'Drag' },
+      title: 'Drag 拖拽',
+    },
+    {
+      router: { name: 'Drop' },
+      title: 'Drop 换位置',
+    },
     {
       router: { name: 'Opations' },
       title: 'Opations 选择拖拽',
@@ -165,6 +193,18 @@ export default {
     {
       router: { name: 'Slide' },
       title: 'Slide 滑动选择',
+    },
+  ],
+  service: [
+    {
+      router: { name: 'Formtest' },
+      title: 'Formtest 正则验证',
+    },
+  ],
+  service: [
+    {
+      router: { name: 'Documentclick' },
+      title: 'Documentclick 顶级事件',
     },
   ],
 };

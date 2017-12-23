@@ -221,4 +221,44 @@ export default [
     name: 'Slide',
     component: loadcomponents.load('Slide', 'views', '/doc'),
   },
+  {
+    path: 'tooltip',
+    name: 'Tooltip',
+    component: loadcomponents.load('Tooltip', 'views', '/doc'),
+  },
+  {
+    path: 'modal',
+    name: 'Modal',
+    component: loadcomponents.load('Modal', 'views', '/doc'),
+  },
+  {
+    path: 'hottip',
+    name: 'Hottip',
+    component: loadcomponents.load('Hottip', 'views', '/doc'),
+  },
+  {
+    path: 'drag',
+    name: 'Drag',
+    component: loadcomponents.load('Drag', 'views', '/doc'),
+  },
+  {
+    path: 'drop',
+    name: 'Drop',
+    component: loadcomponents.load('Drop', 'views', '/doc'),
+  },
+  {
+    path: 'message',
+    name: 'Message',
+    component: loadcomponents.load('Message', 'views', '/doc'),
+  },
+  {
+    path: 'formtest',
+    name: 'Formtest',
+    component: loadcomponents.load('Formtest', 'views', '/doc'),
+  },
+  {
+    path: 'documentclick',
+    name: 'Documentclick',
+    component: loadcomponents.load('Documentclick', 'views', '/doc'),
+  },
 ];

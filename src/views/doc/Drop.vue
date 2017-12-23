@@ -1,13 +1,10 @@
 <template>
-  <article class="link">
-    <h2 class="h2">Link 链接</h2>
-    <p class="p">用于整个网站的公共超级链接。</p>
+  <article class="drop">
+    <h2 class="h2">Drop 换位置</h2>
+    <p class="p">拖着拖着就换位置了。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="link.base" href="http://output.jsbin.com/jojoteb" title="基本用法" info="routers 的属性里面配置路由。">
-      <emfe-link :routers="{ name: 'Font' }">去 EM-FE 的字体</emfe-link>
-    </d-demo>
-    <d-demo :code="link.url" href="http://output.jsbin.com/valaxem" title="外链用法" info="routers 中设置 url 属性即可">
-      <emfe-link :routers="{ url: 'https://www.evente.cn' }">去活动易</emfe-link>
+    <d-demo :code="drop.base" href="http://output.jsbin.com/kezuhag" title="基本用法" info="配合样式就可以交换。">
+      <emfe-drop class-name="doc-drop" :opations-data="list"></emfe-drop>
     </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
@@ -29,12 +26,29 @@
 
 <script>
 import loadcomponents from '@/tools/loadcomponents';
-import link from '@/views/code/link';
+import drop from '@/views/code/drop';
 
 export default {
   data() {
     return {
-      link,
+      drop,
+      list: [
+        {
+          title: 1,
+        },
+        {
+          title: 2,
+        },
+        {
+          title: 3,
+        },
+        {
+          title: 4,
+        },
+        {
+          title: 5,
+        },
+      ],
       propTh: [
         {
           title: '属性',
@@ -115,3 +129,7 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import "../../assets/styles/views/doc/drop.scss";
+</style>
