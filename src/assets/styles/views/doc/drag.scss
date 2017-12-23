@@ -18,5 +18,8 @@
     height: 30px;
     position: absolute;
     cursor: all-scroll;
+
+    /* 拖拽时禁止选中文字 */
+    pointer-events: none;
   }
 }

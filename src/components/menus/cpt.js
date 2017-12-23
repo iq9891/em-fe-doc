@@ -158,14 +158,6 @@ export default {
       router: { name: 'Changecount' },
       title: 'Changecount 数字动效',
     },
-    {
-      router: { name: 'Opations' },
-      title: 'Opations 选择拖拽',
-    },
-    {
-      router: { name: 'Slide' },
-      title: 'Slide 滑动选择',
-    },
   ],
   tip: [
     {
@@ -180,9 +172,23 @@ export default {
       router: { name: 'Hottip' },
       title: 'Hottip 公告',
     },
+  ],
+  drag: [
     {
       router: { name: 'Drag' },
       title: 'Drag 拖拽',
+    },
+    {
+      router: { name: 'Drop' },
+      title: 'Drop 换位置',
+    },
+    {
+      router: { name: 'Opations' },
+      title: 'Opations 选择拖拽',
+    },
+    {
+      router: { name: 'Slide' },
+      title: 'Slide 滑动选择',
     },
   ],
 };

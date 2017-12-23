@@ -241,4 +241,9 @@ export default [
     name: 'Drag',
     component: loadcomponents.load('Drag', 'views', '/doc'),
   },
+  {
+    path: 'drop',
+    name: 'Drop',
+    component: loadcomponents.load('Drop', 'views', '/doc'),
+  },
 ];

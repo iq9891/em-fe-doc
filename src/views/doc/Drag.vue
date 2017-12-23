@@ -1,22 +1,22 @@
 <template>
   <article class="drag">
-    <h2 class="h2">Link 链接</h2>
-    <p class="p">用于整个网站的公共超级链接。</p>
+    <h2 class="h2">Drag 拖拽</h2>
+    <p class="p">脱您想脱，拽您想拽。😍 😍 😍</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="drag.parent" href="http://output.jsbin.com/valaxem" title="拖拽子级" info="在一个地方限制拖拽。">
-      <emfe-drag className="doc-parent" :dragEl="drag1">
+    <d-demo :code="drag.parent" href="http://output.jsbin.com/poxudut" title="拖拽子级" info="在一个地方限制拖拽。">
+      <emfe-drag class-name="doc-parent" :drag-el="drag1" :initial-value="-15">
         <div class="doc-drag" ref="drag1">我可以动</div>
       </emfe-drag>
     </d-demo>
     <d-demo :code="drag.base" href="http://output.jsbin.com/jojoteb" title="任意拖拽" info="定个样式即可使用。">
       <emfe-drag class-name="doc">我可以动</emfe-drag>
     </d-demo>
-    <d-demo :code="drag.limit" href="http://output.jsbin.com/valaxem" title="限制范围" info="在一个地方限制拖拽。">
+    <d-demo :code="drag.limit" href="http://output.jsbin.com/taqiwoq" title="限制范围" info="在一个地方限制拖拽。">
       <div class="doc-box">
         <emfe-drag class-name="doc" limit="true" limit-position="center">我可以动</emfe-drag>
       </div>
     </d-demo>
-    <d-demo :code="drag.direction" href="http://output.jsbin.com/valaxem" title="某一方向" info="在一个地方限制拖拽。">
+    <d-demo :code="drag.direction" href="http://output.jsbin.com/cuvuho" title="某一方向" info="在一个地方限制拖拽。">
       <div class="doc-box">
         <emfe-drag class-name="doc" direction="horizontal">我可以动</emfe-drag>
       </div>
@@ -94,7 +94,7 @@ export default {
         },
         {
           attr: { text: 'initialValue', desc: false },
-          desc: { text: '拖拽元素初始值', row: false },
+          desc: { text: '拖拽元素初始值。当与父级结合使用的时候，可通过设置它，控制拖拽元素在鼠标的位置。', row: false },
           type: { text: 'Number | Array', row: false },
           must: { text: 'false', row: false },
           default: { text: '-', row: false },
@@ -164,7 +164,7 @@ export default {
         },
         {
           attr: { text: 'drag', desc: false },
-          desc: { text: '	拖拽时触发	Event 对象，元素左边距离，元素上面距离， 向左(大于0)还是向右(小于0)， 向上(大于0)还是向下(小于0)', row: false },
+          desc: { text: '拖拽时触发 Event 对象，元素左边距离，元素上面距离， 向左(大于0)还是向右(小于0)， 向上(大于0)还是向下(小于0)', row: false },
           return: { text: 'event 对象，左边距离，上边距离', row: false },
         },
         {

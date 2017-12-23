@@ -1,7 +1,7 @@
 export default {
   base: `
 <template>
-  <emfe-drag className="doc">我可以动</emfe-drag>
+  <emfe-drag class-name="doc">我可以动</emfe-drag>
 </template>
 <style>
 .doc-box {
@@ -20,7 +20,9 @@ export default {
 </style>`,
   limit: `
 <template>
-  <emfe-drag className="doc" limit="true" limit-position="center">我可以动</emfe-drag>
+  <div class="doc-box">
+    <emfe-drag class-name="doc" limit="true" limit-position="center">我可以动</emfe-drag>
+  </div>
 </template>
 <style>
 .doc-box {
@@ -34,12 +36,15 @@ export default {
   width: 30px;
   height: 30px;
   position: absolute;
-  cursor: all-scroll
+  cursor: all-scroll;
+
+  /* 拖拽时禁止选中文字 */
+  pointer-events: none;
 }
 </style>`,
   direction: `
 <template>
-  <emfe-drag className="doc" direction="horizontal">我可以动</emfe-drag>
+  <emfe-drag class-name="doc" direction="horizontal">我可以动</emfe-drag>
 </template>
 <style>
 .doc-box {
@@ -53,12 +58,15 @@ export default {
   width: 30px;
   height: 30px;
   position: absolute;
-  cursor: all-scroll
+  cursor: all-scroll;
+
+  /* 拖拽时禁止选中文字 */
+  pointer-events: none;
 }
 </style>`,
   parent: `
 <template>
-  <emfe-drag className="doc-parent" :dragEl="drag1">
+  <emfe-drag class-name="doc-parent" :drag-el="drag1" :initial-value="-15">
     <div class="doc-drag" ref="drag1"></div>
   </emfe-drag>
 </template>
@@ -74,7 +82,10 @@ export default {
   width: 30px;
   height: 30px;
   position: absolute;
-  cursor: all-scroll
+  cursor: all-scroll;
+
+  /* 拖拽时禁止选中文字 */
+  pointer-events: none;
 }
 </style>
 <script>
