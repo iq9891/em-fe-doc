@@ -172,6 +172,10 @@ export default {
       router: { name: 'Hottip' },
       title: 'Hottip 公告',
     },
+    {
+      router: { name: 'Message' },
+      title: 'Message 全局提示',
+    },
   ],
   drag: [
     {
@@ -189,6 +193,18 @@ export default {
     {
       router: { name: 'Slide' },
       title: 'Slide 滑动选择',
+    },
+  ],
+  service: [
+    {
+      router: { name: 'Formtest' },
+      title: 'Formtest 正则验证',
+    },
+  ],
+  service: [
+    {
+      router: { name: 'Documentclick' },
+      title: 'Documentclick 顶级事件',
     },
   ],
 };

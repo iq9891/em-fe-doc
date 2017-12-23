@@ -63,6 +63,12 @@
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Service 服务</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.service">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
     </div>
   </div>
 </template>

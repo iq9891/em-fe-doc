@@ -4,7 +4,7 @@ export default {
   <div class="layout-wrap">
     <emfe-header logo="https://static.evente.cn/evente/b/desktop/images/logo2017.png" className="layout" user="EM-FE"></emfe-header>
     <emfe-menu :datas="menuData" className="layout"></emfe-menu>
-    <div class="layout-main">真正的内容区域</div>
+    <div class="layout-warp">真正的内容区域</div>
   </div>
 </template>
 <style>
@@ -25,9 +25,8 @@ export default {
   float: left;
 }
 
-.layout-main {
+.layout-warp {
   float: left;
-  padding: 16px;
 }
 </style>
 <script>

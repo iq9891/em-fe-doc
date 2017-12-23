@@ -246,4 +246,19 @@ export default [
     name: 'Drop',
     component: loadcomponents.load('Drop', 'views', '/doc'),
   },
+  {
+    path: 'message',
+    name: 'Message',
+    component: loadcomponents.load('Message', 'views', '/doc'),
+  },
+  {
+    path: 'formtest',
+    name: 'Formtest',
+    component: loadcomponents.load('Formtest', 'views', '/doc'),
+  },
+  {
+    path: 'documentclick',
+    name: 'Documentclick',
+    component: loadcomponents.load('Documentclick', 'views', '/doc'),
+  },
 ];

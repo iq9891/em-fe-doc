@@ -13,7 +13,7 @@
     </emfe-col>
     <emfe-col className="demo" span="12" :style="{height: `${height}`}" ref="source">
       <div class="demo-code-box">
-        <d-code type="html" className="demo" :href="href">{{ code }}</d-code>
+        <d-code :type="type" className="demo" :href="href">{{ code }}</d-code>
       </div>
       <div class="demo-more" @click="moreClick">
         <emfe-icon className="demo" type="gengduo" @click="moreClick" :class="{'demo-icon-active': more}"></emfe-icon>
@@ -49,6 +49,10 @@ export default {
     },
     href: {
       type: String,
+    },
+    type: {
+      type: String,
+      default: 'html',
     },
   },
   mounted() {
