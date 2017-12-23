@@ -201,7 +201,7 @@ export default {
       title: 'Formtest 正则验证',
     },
   ],
-  service: [
+  directive: [
     {
       router: { name: 'Documentclick' },
       title: 'Documentclick 顶级事件',
