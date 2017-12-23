@@ -15,7 +15,49 @@
     width: 80%;
     margin: 24px auto 16px;
     display: block;
-  }
+
+    &-box {
+      position: relative;
+    }
+
+    &-result {
+      box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      width: 80%;
+      transform: translate(-50%, 0);
+      background: $background-color-write;
+      border: 1px solid $background-color-write;
+      max-height: 160px;
+      overflow: auto;
+
+      &-active {
+        background: $brand-color-hover;
+      }
+    }
+
+    &-no {
+      height: 32px;
+      line-height: 32px;
+      padding: 0 8px;
+      color: $text-color-prompt;
+    }
+
+    &-link {
+      display: block;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      padding: 0 8px;
+
+      &-active {
+        &:visited {
+          color: $background-color-write;
+        }
+      }
+    }
+  } // dmenu-search end
 
   &-content {
     width: 100%;

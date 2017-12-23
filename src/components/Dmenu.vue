@@ -1,6 +1,14 @@
 <template>
-  <div class="dmenu">
-    <input type="text" class="input dmenu-search" placeholder="搜索君">
+  <div class="dmenu" v-emfe-documentclick="close">
+    <div class="dmenu-search-box">
+      <input type="text" class="input dmenu-search" v-model="search" @input="change($event)" @keyup.enter="go(moveIndex > -1 ? moveIndex : 0)" @keyup.down="moveResult('down')" @keyup.up="moveResult('up')" placeholder="搜索君">
+      <ul class="dmenu-search-result" v-show="result.length">
+        <li class="dmenu-search-no" v-show="!result.length" key="-1">暂无结果</li>
+        <li class="dmenu-search-result-item" :class="{'dmenu-search-result-active': moveIndex === rstIndex}" v-for="(rst, rstIndex) in result" :key="rstIndex" v-show="result.length">
+          <emfe-link :routers="{}" className="dmenu-search" :class="{'dmenu-search-link-active': moveIndex === rstIndex}" @click="go(rstIndex)">{{rst.title}}</emfe-link>
+        </li>
+      </ul>
+    </div>
     <div class="dmenu-content">
       <div class="dmenu-link-box dmenu-h2">
         <router-link class="link dmenu-link" :to="{ name: 'Install' }">安装</router-link>
@@ -46,12 +54,6 @@
         </dd>
       </dl>
       <dl class="dmenu-dl">
-        <dt class="dmenu-dt">Other 其他</dt>
-        <dd class="dmenu-dd" v-for="cpt in cpts.other">
-          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
-        </dd>
-      </dl>
-      <dl class="dmenu-dl">
         <dt class="dmenu-dt">Tip 提示</dt>
         <dd class="dmenu-dd" v-for="cpt in cpts.tip">
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
@@ -60,6 +62,12 @@
       <dl class="dmenu-dl">
         <dt class="dmenu-dt">Drag 拖拽</dt>
         <dd class="dmenu-dd" v-for="cpt in cpts.drag">
+          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+        </dd>
+      </dl>
+      <dl class="dmenu-dl">
+        <dt class="dmenu-dt">Other 其他</dt>
+        <dd class="dmenu-dd" v-for="cpt in cpts.other">
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
@@ -83,7 +91,50 @@ export default {
     return {
       uis,
       cpts,
+      search: '',
+      result: [],
+      moveIndex: -1,
     };
+  },
+  methods: {
+    change(ev) {
+      const { value } = ev.target;
+      this.result = [];
+      if (value) {
+        const rSearch = new RegExp(value, 'gi');
+        // 设计规范
+        const getUiSearch = this.uis.find(ui => rSearch.test(ui.title));
+        if (getUiSearch) {
+          this.result.push(getUiSearch);
+        }
+        // 其他
+        Object.keys(this.cpts).forEach((cptsKey) => {
+          const getSearch = this.cpts[cptsKey].find(cpt => rSearch.test(cpt.title));
+          if (getSearch) {
+            this.result.push(getSearch);
+          }
+        });
+      }
+    },
+    close() {
+      this.result = [];
+      this.search = '';
+      this.moveIndex = -1;
+    },
+    go(index) {
+      this.$router.push(this.result[index].router);
+      this.close();
+    },
+    moveResult(dir) {
+      // 按下
+      if (this.moveIndex < this.result.length - 1 && dir === 'down') {
+        this.moveIndex++;
+      }
+      // 按上
+      if (this.moveIndex > 0 && dir === 'up') {
+        this.moveIndex--;
+      }
+    },
   },
 };
 </script>
