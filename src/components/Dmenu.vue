@@ -63,12 +63,14 @@
           <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
         </dd>
       </dl>
-      <dl class="dmenu-dl">
-        <dt class="dmenu-dt">Service 服务</dt>
-        <dd class="dmenu-dd" v-for="cpt in cpts.service">
-          <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
-        </dd>
-      </dl>
+      <h2 class="dmenu-h2">服务</h2>
+      <div class="dmenu-link-box dmenu-h2" v-for="cpt in cpts.service">
+        <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+      </div>
+      <h2 class="dmenu-h2">指令</h2>
+      <div class="dmenu-link-box dmenu-h2" v-for="cpt in cpts.directive">
+        <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+      </div>
     </div>
   </div>
 </template>
