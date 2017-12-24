@@ -195,16 +195,4 @@ export default {
       title: 'Slide 滑动选择',
     },
   ],
-  service: [
-    {
-      router: { name: 'Formtest' },
-      title: 'Formtest 正则验证',
-    },
-  ],
-  directive: [
-    {
-      router: { name: 'Documentclick' },
-      title: 'Documentclick 顶级事件',
-    },
-  ],
 };
