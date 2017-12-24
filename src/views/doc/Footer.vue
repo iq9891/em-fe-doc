@@ -1,7 +1,7 @@
 <template>
   <article class="footer">
     <h2 class="h2">Footer 底部</h2>
-    <p class="p">用于整个网站的公共底部。</p>
+    <p class="p">用于整个网站的公共底部。使用规则，内容不满一屏时沉底，大于一屏时，跟随内容。</p>
     <h4 class="h4">代码示例</h4>
     <d-demo :code="footer.base" href="http://output.jsbin.com/gicipib" title="基本用法" info="只需加上 content 属性即可。">
       <emfe-footer content="EM-FE"></emfe-footer>

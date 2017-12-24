@@ -11,10 +11,10 @@
     <d-demo :code="checkout.disabled" href="http://output.jsbin.com/hekeqil" title="禁用" info="通过设置 disabled 属性来禁用多选框。 1.3.0 开始建议使用 disabled 属性设置禁用。">
       <emfe-checkout :disabled="true" title="EM-FE"></emfe-checkout>
     </d-demo>
-    <d-demo :code="checkout.tip" href="http://output.jsbin.com/gicipib" title="提示" info="通过设置 tip 属性。">
+    <d-demo :code="checkout.tip" href="http://output.jsbin.com/qarasut" title="提示" info="通过设置 tip 属性。">
       <emfe-checkout className="checkout" title="EM-FE" tip="EM-FE 是企业级定制 UI 库"></emfe-checkout>
     </d-demo>
-    <d-demo :code="checkout.show" href="http://output.jsbin.com/qarasut" title="显示隐藏内容" info="通过设置 slideShow 属性展开隐藏的内容。多选在一横行只需设置 inline 属性。通过设置 value 属性操作默认是否选中。">
+    <d-demo :code="checkout.show" href="http://output.jsbin.com/dogoqu" title="显示隐藏内容" info="通过设置 slideShow 属性展开隐藏的内容。多选在一横行只需设置 inline 属性。通过设置 value 属性操作默认是否选中。">
       <emfe-checkout :slide-show="true" :value="true" title="EM-FE 的组件">
         <div slot="slide">
           <emfe-checkout title="单选" inline="true"></emfe-checkout>

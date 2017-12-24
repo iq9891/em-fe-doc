@@ -7,7 +7,7 @@
       <emfe-date v-model="dateBase"></emfe-date>
       <p class="p" v-show="dateBase">您选择的日期是：{{dateBase}}</p>
     </d-demo>
-    <d-demo :code="date.confirm" href="http://output.jsbin.com/bavurep" title="无确认" info="confirm 设置为 false 即可。" style="z-index: 4">
+    <d-demo :code="date.confirm" href="http://output.jsbin.com/pajafix" title="无确认" info="confirm 设置为 false 即可。" style="z-index: 4">
       <emfe-date :confirm="false"></emfe-date>
     </d-demo>
     <d-demo :code="date.filter" href="http://output.jsbin.com/rarewun" title="筛选" info="设置 disabled-date 回调函数即可 。 筛选条件是今天之前不可选。" style="z-index: 3">

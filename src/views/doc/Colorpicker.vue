@@ -3,7 +3,7 @@
     <h2 class="h2">Color 颜色选择器</h2>
     <p class="p">选择您想选择的任意颜色。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="colorCode.base" href="http://output.jsbin.com/mebebor" title="基本用法" info="通过回调函数检测是否成功。">
+    <d-demo :code="colorCode.base" href="http://output.jsbin.com/mamazi" title="基本用法" info="通过回调函数检测是否成功。">
       <emfe-color v-model="color"></emfe-color>
       <p class="p" v-show="color">{{color}}是您选择的颜色。</p>
     </d-demo>

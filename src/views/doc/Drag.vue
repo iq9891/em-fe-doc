@@ -8,7 +8,7 @@
         <div class="doc-drag" ref="drag1">我可以动</div>
       </emfe-drag>
     </d-demo>
-    <d-demo :code="drag.base" href="http://output.jsbin.com/jojoteb" title="任意拖拽" info="定个样式即可使用。">
+    <d-demo :code="drag.base" href="http://output.jsbin.com/valaja" title="任意拖拽" info="定个样式即可使用。">
       <emfe-drag class-name="doc">我可以动</emfe-drag>
     </d-demo>
     <d-demo :code="drag.limit" href="http://output.jsbin.com/taqiwoq" title="限制范围" info="在一个地方限制拖拽。">

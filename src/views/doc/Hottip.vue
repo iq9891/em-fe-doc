@@ -3,13 +3,13 @@
     <h2 class="h2">Hottip 公告</h2>
     <p class="p">这只是一个静静的公告。</p>
     <h4 class="h4">代码示例</h4>
-    <d-demo :code="hottip.base" href="http://output.jsbin.com/yuquwiq" title="基本用法" info="只是公告。">
+    <d-demo :code="hottip.base" href="http://output.jsbin.com/bohesup" title="基本用法" info="只是公告。">
       <emfe-hottip>
-        <div slot="no2">注册设置：默认注册方式为手机号、验证码，即用户只需填写手机号和验证码即可注册成功。其他字段默认完善信息，如果您想收集用户的更多信息，可以编辑字段类型设置为“注册时必填”，即用户在注册时必须填写该字段才能完成注册。<emfe-link :routers="{url: 'https://www.evente.com'}">去设置</emfe-link></div>
+        <div>注册设置：默认注册方式为手机号、验证码，即用户只需填写手机号和验证码即可注册成功。其他字段默认完善信息，如果您想收集用户的更多信息，可以编辑字段类型设置为“注册时必填”，即用户在注册时必须填写该字段才能完成注册。<emfe-link :routers="{url: 'https://www.evente.com'}">去设置</emfe-link></div>
       </emfe-hottip>
     </d-demo>
-    <d-demo :code="hottip.lang" href="http://output.jsbin.com/gohawac" title="隐藏一部分" info="很长的公告。">
-      <emfe-hottip @change="skew">
+    <d-demo :code="hottip.lang" href="http://output.jsbin.com/lefofah" title="隐藏一部分" info="很长的公告。">
+      <emfe-hottip :open="true" @change="skew">
         <div slot="no1">
           <ul>
             <li>积分抵现说明：</li>
@@ -30,6 +30,13 @@
       </emfe-hottip>
     </d-demo>
     <h4 class="h4">API</h4>
+    <h5 class="h5">属性</h5>
+    <emfe-table class="table" :columns="propTh" :data="propTd">
+      <emfe-table-head slot="head">
+      </emfe-table-head>
+      <emfe-table-body slot="body"  v-for="(dataList,index) in propTd" :ind="index" :key="index" :dataList="dataList">
+      </emfe-table-body>
+    </emfe-table>
     <h5 class="h5">方法</h5>
     <emfe-table class="table" :columns="eventTh" :data="eventTd">
       <emfe-table-head slot="head">
@@ -49,6 +56,37 @@ export default {
     return {
       hottip,
       status: false,
+      propTh: [
+        {
+          title: '属性',
+          key: 'attr',
+        },
+        {
+          title: '说明',
+          key: 'desc',
+        },
+        {
+          title: '类型',
+          key: 'type',
+        },
+        {
+          title: '是否必须',
+          key: 'must',
+        },
+        {
+          title: '默认值',
+          key: 'default',
+        },
+      ],
+      propTd: [
+        {
+          attr: { text: 'open', desc: false },
+          desc: { text: '是否展开。 1.4.0 新增。', row: false },
+          type: { text: 'String', row: false },
+          must: { text: 'true', row: false },
+          default: { text: '-', row: false },
+        },
+      ],
       eventTh: [
         {
           title: '事件名',
