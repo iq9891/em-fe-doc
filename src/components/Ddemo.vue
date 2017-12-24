@@ -13,9 +13,9 @@
     </emfe-col>
     <emfe-col className="demo" span="12" :style="{height: `${height}`}" ref="source">
       <div class="demo-code-box">
-        <d-code :type="type" className="demo" :href="href">{{ code }}</d-code>
+        <d-code :type="type" className="demo" :href="href" ref="code">{{ code }}</d-code>
       </div>
-      <div class="demo-more" @click="moreClick">
+      <div class="demo-more" v-show="hasMore" @click="moreClick">
         <emfe-icon className="demo" type="gengduo" @click="moreClick" :class="{'demo-icon-active': more}"></emfe-icon>
       </div>
     </emfe-col>
@@ -30,8 +30,10 @@ export default {
       copied: false,
       review: 0,
       source: 0,
+      codeHeight: 0,
       height: 0,
       more: false,
+      hasMore: true,
     };
   },
   props: {
@@ -58,9 +60,12 @@ export default {
   mounted() {
     // 不加定时器，有可能高度获取不正确，如 /doc/bar 中的 demo
     setTimeout(() => {
-      this.review = `${this.$refs.review.$el.clientHeight}px`;
+      const reviewHeight = this.$refs.review.$el.clientHeight;
+      this.review = `${reviewHeight}px`;
+      this.codeHeight = this.$refs.code.$el.clientHeight;
       this.source = 'auto';
       this.height = this.review;
+      this.hasMore = this.codeHeight > reviewHeight;
     }, 0);
   },
   methods: {

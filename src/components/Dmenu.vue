@@ -72,18 +72,20 @@
         </dd>
       </dl>
       <h2 class="dmenu-h2">服务</h2>
-      <div class="dmenu-link-box dmenu-h2" v-for="cpt in cpts.service">
-        <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+      <div class="dmenu-link-box dmenu-h2" v-for="sce in services">
+        <router-link class="link dmenu-link" :to="sce.router">{{ sce.title }}</router-link>
       </div>
       <h2 class="dmenu-h2">指令</h2>
-      <div class="dmenu-link-box dmenu-h2" v-for="cpt in cpts.directive">
-        <router-link class="link dmenu-link" :to="cpt.router">{{ cpt.title }}</router-link>
+      <div class="dmenu-link-box dmenu-h2" v-for="drt in directives">
+        <router-link class="link dmenu-link" :to="drt.router">{{ drt.title }}</router-link>
       </div>
     </div>
   </div>
 </template>
 <script>
 import uis from './menus/ui';
+import directives from './menus/directive';
+import services from './menus/service';
 import cpts from './menus/cpt';
 
 export default {
@@ -91,6 +93,8 @@ export default {
     return {
       uis,
       cpts,
+      directives,
+      services,
       search: '',
       result: [],
       moveIndex: -1,

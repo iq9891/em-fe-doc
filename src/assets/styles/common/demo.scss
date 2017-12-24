@@ -97,7 +97,8 @@
   &-icon {
     transform: rotate(90deg);
     margin: 0 auto;
-    color: $text-color-default;
+    color: $brand-color-click;
+    font-weight: bold;
     transition: transform 0.2s;
 
     &-active {
