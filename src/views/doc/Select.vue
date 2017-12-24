@@ -20,10 +20,10 @@
     <d-demo :code="select.news" href="http://output.jsbin.com/zugorit" title="新建" info="通过 news 的属性设置新建模式。 1.3.0 开始支持 add 方法，用于保存事件触发。 1.3.0 开始支持 news 属性直接设置带有保存按钮的模式。">
       <emfe-select :datas="news" news @add="add"></emfe-select>
     </d-demo>
-    <d-demo :code="select.tips" href="http://output.jsbin.com/vubocay" title="提示" info="通过 tips 的属性设置。">
+    <d-demo :code="select.tips" href="http://output.jsbin.com/heciroc" title="提示" info="通过 tips 的属性设置。">
       <emfe-select :datas="tips" tip="提示文字" placement="right"></emfe-select>
     </d-demo>
-    <d-demo :code="select.disabled" href="http://output.jsbin.com/heciroc" title="禁用" info="通过 disabled 的属性设置。">
+    <d-demo :code="select.disabled" href="http://output.jsbin.com/vubocay" title="禁用" info="通过 disabled 的属性设置。">
       <emfe-select :datas="[]" :disabled="true"></emfe-select>
     </d-demo>
     <d-demo :code="select.direction" href="http://output.jsbin.com/fuhesuf" title="向上" info="通过 direction 的属性设置。 1.3.0 新增。">
@@ -174,7 +174,7 @@ export default {
         },
         {
           attr: { text: 'datas', desc: false },
-          desc: { text: '数据。 type 为 default 的时候，数据格式为：[{ name: \'下拉文字\', disabled: false }]。 其中 name 是下拉选项的名字。 disabled 是否禁用，如果不禁用可不传。', row: false },
+          desc: { text: '数据。 type 为 default 的时候，数据格式为：[{ name: \'下拉文字\', disabled: false }]。 其中 name 是下拉选项的名字。 disabled 是否禁用，如果不禁用可不传。 1.4.0 开始 可设置 disabled 为 ture ， 之前必须设置 \'disabled\' 才可禁用。', row: false },
           type: { text: 'Array', row: false },
           must: { text: 'true', row: false },
           default: { text: '-', row: false },

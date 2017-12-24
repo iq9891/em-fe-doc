@@ -101,7 +101,7 @@
         </emfe-col>
       </emfe-row>
     </d-demo>
-    <d-demo :code="grid.deviation" href="http://output.jsbin.com/vuqurev" title="Flex 对齐" info="通过给 emfe-row 设置参数 align 为不同的值，来定义子元素在垂直方向上的排布方式。在 Flex 模式下有效。">
+    <d-demo :code="grid.align" href="http://output.jsbin.com/xoqoden" title="Flex 对齐" info="通过给 emfe-row 设置参数 align 为不同的值，来定义子元素在垂直方向上的排布方式。在 Flex 模式下有效。">
       <emfe-row type="flex" justify="center" align="middle">
         <emfe-col span="4">
           <p class="grid-blue" style="height: 80px">col-4</p>

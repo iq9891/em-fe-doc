@@ -6,7 +6,7 @@
     <d-demo :code="inputmore.base" href="http://output.jsbin.com/wopopiq" title="基本用法" info="只需设置 datas 属性即可。">
       <emfe-inputmore-group :datas="group1"></emfe-inputmore-group>
     </d-demo>
-    <d-demo :code="inputmore.icon" href="http://output.jsbin.com/hufekup" title="icon 用法" info="只需设置 icon 属性即可。">
+    <d-demo :code="inputmore.icon" href="http://output.jsbin.com/xabesac" title="icon 用法" info="只需设置 icon 属性即可。">
       <emfe-inputmore-group icon="shouji1" :datas="group2"></emfe-inputmore-group>
     </d-demo>
     <h4 class="h4">API</h4>

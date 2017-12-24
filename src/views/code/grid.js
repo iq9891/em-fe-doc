@@ -44,6 +44,21 @@ export default {
     <div class="grid-lightblue">col-12</div>
   </emfe-col>
 </emfe-row>`,
+  align: `
+<emfe-row type="flex" justify="center" align="middle">
+  <emfe-col span="4">
+    <p class="grid-blue" style="height: 80px">col-4</p>
+  </emfe-col>
+  <emfe-col span="4">
+    <p class="grid-lightblue" style="height: 30px">col-4</p>
+  </emfe-col>
+  <emfe-col span="4">
+    <p class="grid-blue" style="height: 100px">col-4</p>
+  </emfe-col>
+  <emfe-col span="4">
+    <p class="grid-lightblue" style="height: 60px">col-4</p>
+  </emfe-col>
+</emfe-row>`,
   sort: `
 <emfe-row>
   <emfe-col span="18" pull="6">
