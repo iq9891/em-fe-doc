@@ -24,9 +24,10 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GH_TOKEN
+  github_token: "$GH_TOKEN"
+  secure: "$GH_TOKEN"
   on:
-    branch: gh-pages
+    branch: master
 
 cache:
   yarn: true
