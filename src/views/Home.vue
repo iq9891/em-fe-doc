@@ -11,7 +11,8 @@
           <router-link class="home-link" :to="{ name: 'Start' }">快速开始</router-link>
         </li>
         <li class="home-link-item">
-          <router-link class="home-link" :to="{ name: 'Install'}">组件({{cptNum}})</router-link>
+          <router-link class="home-link" :to="{ name: 'Install'}">
+            <span>组件(</span><emfe-changecount className="home" :count="cptNum"></emfe-changecount><span>)</span></router-link>
         </li>
         <li class="home-link-item">
           <a class="home-link" target="_blank" href="https://github.com/em-fe/EM-FE">
