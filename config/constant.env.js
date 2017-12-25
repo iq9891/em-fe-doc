@@ -6,5 +6,5 @@ module.exports = {
   CDN_DEVELOPMENT: '"http://localhost:8182"',
   CDN_TESTING: '"http://emfedoc.inner.evente.cn:30386/"',
   CDN_LABING: '"http://emfedoc.inner.evente.cn:30386/"',
-  CDN_PRODUCTION: '"https://management.evente.cn/form/"',
+  CDN_PRODUCTION: '"https://iq9891.github.io/em-fe-doc/"',
 };
