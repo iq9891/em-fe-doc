@@ -14,6 +14,17 @@ path1 = path1.replace(/"/g, '');
 module.exports = {
   build: {
     env: buildEnv,
+    index: path.resolve(__dirname, '../docs/index.html'),
+    assetsRoot: path.resolve(__dirname, '../docs'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: path1,
+    productionSourceMap: false,
+    productionGzip: true,
+    productionGzipExtensions: ['js', 'css'],
+    bundleAnalyzerReport: process.env.npm_config_report
+  },
+  test: {
+    env: buildEnv,
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
