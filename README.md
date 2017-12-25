@@ -193,3 +193,7 @@ npm run lint
 
   - [Node.js](https://nodejs.org/en)
   - [Webpack2](https://webpack.js.org)
+
+## 构建方式
+
+通过 travis 在 iq9891 的 master 提交才能部署到 github page 上
