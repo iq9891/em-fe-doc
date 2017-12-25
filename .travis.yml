@@ -20,14 +20,6 @@ script:
 
 after_script:
   - sh scrips/deploy.sh
-# deploy:
-#   provider: pages
-#   skip_cleanup: true
-#   github_token: $GH_TOKEN
-#   email: 649087408@qq.com
-#   name: iq9891
-#   on:
-#     branch: gh-pages
 
 cache:
   yarn: true

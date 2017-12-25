@@ -1,30 +1,27 @@
 mkdir pages && cd pages
 
 git init
-git clone --branch=gh-pages https://github.com/iq9891/em-fe-doc.git
 
-ls
+git config --global user.name "$TRAVIS_COMMIT_USER"
+git config --global user.email "$TRAVIS_COMMIT_EMAIL"
+
+git clone --branch=gh-pages https://github.com/iq9891/em-fe-doc.git
 
 cd em-fe-doc
 
-git branch
-
-echo 91
-
-ls
-
 rm -rf *
-
-echo 94
-
-ls
-
-echo 92
-
-ls
 
 cp -rf ../../dist/** .
 
-echo 90
-
 git status
+
+git add .
+
+git commit -m "feature: $TRAVIS_COMMIT_MSG"
+
+git push origin gh-pages
+
+cd ../..
+
+echo "DONE, Bye~"
+exit 0
