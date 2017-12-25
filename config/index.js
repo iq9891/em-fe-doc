@@ -14,8 +14,8 @@ path1 = path1.replace(/"/g, '');
 module.exports = {
   build: {
     env: buildEnv,
-    index: path.resolve(__dirname, '../docs/index.html'),
-    assetsRoot: path.resolve(__dirname, '../docs'),
+    index: path.resolve(__dirname, '../dist/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: path1,
     productionSourceMap: false,
