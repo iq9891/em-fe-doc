@@ -9,6 +9,22 @@ cd em-fe-doc
 
 git branch
 
+echo 91
+
+ls
+
+rm -rf *
+
+echo 94
+
+ls
+
+echo 92
+
+ls
+
+cp -rf ../../dist/** .
+
 echo 90
 
 git status
