@@ -8,18 +8,12 @@ var path = require('path')
 var chalk = require('chalk')
 var webpack = require('webpack')
 var config = require('../config')
-var assetsSubDirectory = config.build.assetsSubDirectory;
-
-if(process.env.DEV_ENV === 'testing' || process.env.DEV_ENV === 'labing') {
-  webpackConfig = require('./webpack.lab.conf');
-  assetsRoot = config.test.assetsRoot;
-  assetsSubDirectory = config.test.assetsSubDirectory;
-}
+var webpackConfig = process.env.DEV_ENV === 'labing' ? require('./webpack.lab.conf') : require('./webpack.prod.conf');
 
 var spinner = ora('building for production...')
 spinner.start()
 
-rm(path.join(assetsRoot, config.build.assetsSubDirectory), err => {
+rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
   if (err) throw err
   webpack(webpackConfig, function (err, stats) {
     spinner.stop()
