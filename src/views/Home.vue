@@ -11,7 +11,8 @@
           <router-link class="home-link" :to="{ name: 'Start' }">快速开始</router-link>
         </li>
         <li class="home-link-item">
-          <router-link class="home-link" :to="{ name: 'Install'}">组件</router-link>
+          <router-link class="home-link" :to="{ name: 'Install'}">
+            <span>组件(</span><emfe-changecount className="home" :count="cptNum"></emfe-changecount><span>)</span></router-link>
         </li>
         <li class="home-link-item">
           <a class="home-link" target="_blank" href="https://github.com/em-fe/EM-FE">
@@ -28,8 +29,18 @@
 
 <script>
 import aurora from '@/views/aurora';
+import cpts from '@/components/menus/cpt';
 
 export default {
+  data() {
+    let cptNum = 0;
+    Object.keys(cpts).forEach((key) => {
+      cptNum += cpts[key].length;
+    });
+    return {
+      cptNum,
+    };
+  },
   mounted() {
     aurora(this.$refs.canvas);
   },
