@@ -1918,9 +1918,13 @@ em-normalize@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/em-normalize/-/em-normalize-1.0.2.tgz#fc12f05697d1c747f78f6670a66b4fcb63968435"
 
-em-underline@^1.0.10, em-underline@^1.0.9:
+em-underline@^1.0.10:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/em-underline/-/em-underline-1.1.0.tgz#991fb4d1734cee7643a54dc3e31d6aabf33b7a81"
+
+em-underline@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/em-underline/-/em-underline-1.1.1.tgz#537590ea296ad07579f7396c9e83254218670e11"
 
 emojis-list@^2.0.0:
   version "2.1.0"
