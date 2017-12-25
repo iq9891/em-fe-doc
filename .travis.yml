@@ -18,8 +18,15 @@ before_script:
 script:
   - yarn run build
 
-after_script:
-  - sh scrips/deploy.sh
+# after_script:
+#   - sh scrips/deploy.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  on:
+    branch: gh-pages
 
 cache:
   yarn: true
