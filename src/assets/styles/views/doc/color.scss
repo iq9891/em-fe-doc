@@ -1,0 +1,193 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.color {
+  &-row {
+    padding: 24px 0 0;
+  }
+
+  &-h4 {
+    margin-top: 48px;
+  }
+
+  &-title {
+    font-size: 16px;
+    line-height: $line-height;
+  }
+
+  &-desc {
+    font-size: 14px;
+    line-height: $line-height;
+  }
+
+  &-common {
+    padding: 16px;
+    margin-bottom: 16px;
+    color: $background-color-write;
+  }
+
+  &-brand {
+    &-default {
+      background: $brand-color-default;
+    }
+
+    &-hover {
+      background: $brand-color-hover;
+    }
+
+    &-focus {
+      background: $brand-color-click;
+    }
+
+    &-active {
+      background: $brand-color-select;
+      color: $text-color-default;
+    }
+  }
+
+  &-auxiliary {
+    &-warning {
+      background: $auxiliary-color-warning;
+    }
+
+    &-success {
+      background: $auxiliary-color-success;
+    }
+
+    &-danger {
+      background: $auxiliary-color-danger;
+    }
+
+    &-info {
+      background: $brand-color-default;
+    }
+  }
+
+  &-font {
+    &-text {
+      background: $text-color-default;
+    }
+
+    &-menu {
+      background: $menu-text-color;
+    }
+
+    &-bar {
+      background: $bar-text-color;
+    }
+
+    &-prompt {
+      background: $text-color-prompt;
+    }
+
+    &-disable {
+      background: $text-color-disable;
+      color: $text-color-default;
+    }
+
+    &-tip {
+      background: $auxiliary-color-success;
+    }
+
+    &-error {
+      background: $auxiliary-color-danger;
+    }
+
+    &-link {
+      background: $brand-color-default;
+    }
+
+    &-write {
+      @include border();
+
+      padding: 15px;
+      background: $background-color-write;
+      color: $text-color-default;
+    }
+
+    &-tag {
+      &-default {
+        background: $brand-color-default;
+      }
+
+      &-hover {
+        background: $brand-color-hover;
+      }
+
+      &-active {
+        &-default {
+          background: $text-color-tag;
+        }
+
+        &-hover {
+          background: $checkout-color-hovered;
+        }
+      }
+    }
+  }
+
+  &-bg {
+    &-title {
+      background: $background-color-title;
+      color: $text-color-default;
+    }
+
+    &-disable {
+      background: $background-color-main;
+      color: $text-color-default;
+    }
+
+    &-tag {
+      &-default {
+        background: $switch-color-default;
+        color: $text-color-default;
+      }
+
+      &-hover {
+        background: $switch-color-hover;
+        color: $text-color-default;
+      }
+
+      &-selected {
+        background: $switch-color-selected;
+
+        &2 {
+          background: $checkout-color-checked;
+          color: $text-color-default;
+        }
+      }
+    }
+  }
+
+  &-border {
+    &-btn {
+      &-default {
+        background: $button-color-default;
+        color: $text-color-default;
+      }
+
+      &-hover {
+        background: $brand-color-hover;
+      }
+
+      &-focus {
+        background: $brand-color-click;
+      }
+    }
+  }
+
+  &-icon {
+    &-default {
+      background: $text-color-disable;
+      color: $text-color-default;
+    }
+
+    &-brand {
+      background: $brand-color-default;
+    }
+
+    &-success {
+      background: $auxiliary-color-success;
+    }
+  }
+}

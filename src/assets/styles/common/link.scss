@@ -1,0 +1,18 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.link {
+  color: $brand-color-default;
+
+  &:visited {
+    color: $brand-color-default;
+  }
+
+  &:hover {
+    color: $brand-color-hover;
+  }
+
+  &:active {
+    color: $brand-color-click;
+  }
+}

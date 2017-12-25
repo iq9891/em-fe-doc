@@ -1,0 +1,25 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.doc {
+  &-box,
+  &-parent-drag {
+    @include border();
+
+    height: 100px;
+    width: 120px;
+    position: relative;
+  }
+
+  &-drag {
+    @include border();
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: all-scroll;
+
+    /* 拖拽时禁止选中文字 */
+    pointer-events: none;
+  }
+}

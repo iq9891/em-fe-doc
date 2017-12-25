@@ -1,0 +1,35 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.dheader {
+  @include border(bottom);
+  @include clearfix();
+
+  height: 64px;
+  padding: 0 64px;
+
+  &-title {
+    height: 64px;
+    line-height: 64px;
+    font-size: 40px;
+    float: left;
+  }
+
+  &-list {
+    float: right;
+  }
+
+  &-btn {
+    font-size: 16px;
+    line-height: 64px;
+    height: 64px;
+    margin: 0 16px;
+    display: inline-block;
+
+    &.router-link-exact-active {
+      line-height: 64px;
+      height: 64px;
+      border-bottom: 4px solid $brand-color-default;
+    }
+  }
+}

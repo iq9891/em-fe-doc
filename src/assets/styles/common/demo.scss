@@ -1,0 +1,108 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.demo {
+  &-row {
+    @include border();
+
+    margin: 24px 0;
+  }
+
+  &-col {
+    &:last-child {
+      @include border(left, $button-color-default, 1px, dashed);
+
+      position: relative;
+    }
+  }
+
+  &-preview {
+    margin: 16px 16px 0;
+    position: relative;
+    z-index: 4;
+  }
+
+  &-info {
+    padding: 32px 0 16px;
+  }
+
+  &-header {
+    position: relative;
+    margin: 0 16px;
+
+    &::after {
+      @include border(bottom);
+
+      content: ' ';
+      height: 11px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    color: $text-color-default;
+    background: $background-color-write;
+    padding: 0 16px;
+    line-height: $line-height;
+    position: relative;
+    z-index: 3;
+    font-size: 14px;
+    margin: 0 32px;
+  }
+
+  &-p {
+    margin: 8px 16px 0;
+    font-size: 14px;
+    color: $text-color-default;
+    line-height: $line-height;
+  }
+
+  &-pre {
+    margin: 0;
+  }
+
+  &-code {
+    background: #fff !important;
+
+    &-box {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &-more {
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+    &::after {
+      box-shadow: inset 0 -15px 30px #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: ' ';
+      height: 32px;
+      width: 100%;
+    }
+  }
+
+  &-icon {
+    transform: rotate(90deg);
+    margin: 0 auto;
+    color: $brand-color-click;
+    font-weight: bold;
+    transition: transform 0.2s;
+
+    &-active {
+      transform: rotate(-90deg);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.p {
+  margin: 24px 0;
+  word-break: break-all;
+  font-size: 14px;
+  line-height: $line-height;
+  color: $text-color-default;
+}

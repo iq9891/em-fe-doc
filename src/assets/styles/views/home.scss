@@ -1,0 +1,90 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.home {
+  &-canvas {
+    width: 100%;
+    height: 100%;
+
+    &-box {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $text-color-default;
+    }
+  }
+
+  &-main {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -80%);
+  }
+
+  &-title {
+    font-size: 100px;
+    text-align: center;
+    padding: 0 0 72px;
+    color: $background-color-write;
+  }
+
+  &-info {
+    font-size: 14px;
+    text-align: center;
+    line-height: $line-height;
+    color: $background-color-write;
+  }
+
+  &-link {
+    line-height: $line-height;
+    font-size: 16px;
+    color: $brand-color-default;
+    display: flex;
+
+    &:visited {
+      color: $brand-color-default;
+    }
+
+    &:hover {
+      color: $brand-color-hover;
+
+      & path {
+        fill: $brand-color-hover;
+      }
+    }
+
+    &:active {
+      color: $brand-color-click;
+
+      & path {
+        fill: $brand-color-click;
+      }
+    }
+
+    &-list {
+      width: 60%;
+      margin: 72px auto 0;
+      text-align: center;
+    }
+
+    &-item {
+      display: inline-block;
+      margin: 0 16px;
+    }
+  }
+
+  &-changecount {
+    display: inline-block;
+
+    &-box {
+      width: 10px;
+
+      &-count {
+        font-size: 16px;
+      }
+    }
+  }
+}

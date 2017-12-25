@@ -1,0 +1,11 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.ul {
+  padding: 0 32px;
+}
+
+.li {
+  line-height: $line-height;
+  list-style: circle;
+}

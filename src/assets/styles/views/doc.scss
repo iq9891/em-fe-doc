@@ -1,0 +1,24 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.doc {
+  height: 100%;
+
+  &-wrap {
+    display: flex;
+    height: calc(100% - 64px);
+  }
+
+  &-view {
+    width: 100%;
+    box-shadow: inset 4px 4px 8px $shadow-color;
+    padding: 32px;
+    min-height: 100%;
+
+    &-box {
+      width: calc(100% - 210px);
+      overflow: auto;
+      height: 100%;
+    }
+  }
+}

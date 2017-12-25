@@ -1,0 +1,9 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.checkout {
+  &-checkout {
+    z-index: 4;
+    position: relative;
+  }
+}

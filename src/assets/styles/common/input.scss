@@ -1,0 +1,31 @@
+@import "../config.scss";
+@import "../mixin/mixin.scss";
+
+.input {
+  @include border();
+
+  width: calc(100% - 18px);
+  height: 32px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  color: $text-color-default;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: 'Microsoft YaHei', 'PingFangSC', 'Helvetica', sans-serif, 'Arial';
+
+  &:focus {
+    @include border(all, $brand-color-default);
+
+    background: $background-color-write;
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $text-color-prompt;
+    letter-spacing: 1.08px;
+    line-height: 1;
+    font-size: 14px;
+  }
+}

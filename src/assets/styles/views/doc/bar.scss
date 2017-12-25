@@ -1,0 +1,13 @@
+@import "../../config.scss";
+@import "../../mixin/mixin.scss";
+
+.bar {
+  &-bar {
+    @include border(top);
+    @include border(left);
+    @include border(bottom);
+
+    position: static;
+    width: 128px;
+  }
+}
