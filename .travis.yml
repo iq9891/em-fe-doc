@@ -18,9 +18,6 @@ before_script:
 script:
   - yarn run build
 
-# after_script:
-#   - sh scrips/deploy.sh
-
 deploy:
   provider: pages
   skip_cleanup: true
