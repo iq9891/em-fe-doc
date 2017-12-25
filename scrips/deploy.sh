@@ -1,9 +1,11 @@
-cd ./dist
-git init
-git config user.name "$TRAVIS_COMMIT_USER"
-git config user.email "$TRAVIS_COMMIT_EMAIL"
-git add .
+mkdir pages
+
+cd pages
+git clone -b gh-pages https://${$ROT_TOKEN}@${GH_REF} && cd em-fe-doc
+
+rm -rf *.js *.css *.map static index.html
+cp -rf ../../dist/** .
+
+git add -A .
 git commit -m "$TRAVIS_COMMIT_MSG"
-git remote add origin "https://${$ROT_TOKEN}@${GH_REF}"
-git pull origin gh-pages
-git push --force origin gh-pages
+git push origin gh-pages
