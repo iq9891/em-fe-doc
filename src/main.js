@@ -12,7 +12,7 @@ import router from './routers';
 Vue.config.productionTip = false;
 
 Vue.use(emfe);
-
+console.log(1);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
