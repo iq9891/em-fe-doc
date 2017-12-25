@@ -19,6 +19,7 @@ const aurora = {
       vx: 0,
       vy: 0,
     };
+    console.log(canvas.width, canvas.height, 'canvas.width');
     this.color = random(0, 360);
     this.colorBorder = random(0, 360);
     // 绑定 body 事件
@@ -78,6 +79,7 @@ const aurora = {
       this.fl.y += (this.my - this.fl.y) * 0.4;
     }
 
+    console.log(this.fl.x, this.fl.y, 'this.fl.x, this.fl.y');
     this.points.push(new Point(this.fl.x, this.fl.y));
     // 如果到了极值，就从头删除
     if (this.points.length > this.max) {
@@ -91,8 +93,10 @@ const aurora = {
   },
   anim() {
     const self = this;
+    console.log('anim');
     requestAnimationFrame(function loop() {
       requestAnimationFrame(loop);
+      console.log('loop');
 
       self.loop();
     });

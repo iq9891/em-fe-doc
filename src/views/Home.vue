@@ -42,7 +42,9 @@ export default {
     };
   },
   mounted() {
+    console.log('mounted start');
     aurora(this.$refs.canvas);
+    console.log('mounted end');
   },
 };
 </script>
