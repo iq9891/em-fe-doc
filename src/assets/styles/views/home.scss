@@ -12,6 +12,7 @@
       left: 0;
       bottom: 0;
       right: 0;
+      background: $text-color-default;
     }
   }
 
@@ -25,16 +26,16 @@
 
   &-title {
     font-size: 100px;
-    color: $text-color-default;
     text-align: center;
     padding: 0 0 72px;
+    color: $background-color-write;
   }
 
   &-info {
     font-size: 14px;
     text-align: center;
-    color: $text-color-default;
     line-height: $line-height;
+    color: $background-color-write;
   }
 
   &-link {
