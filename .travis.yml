@@ -19,7 +19,7 @@ script:
   - yarn run build
 
 after_script:
-  - sh build/deploy-ci.sh
+  - sh scrips/deploy.sh
 
 cache:
   yarn: true
