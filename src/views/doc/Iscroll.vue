@@ -48,6 +48,47 @@
         <p>一些不必要的内容</p>
       </emfe-iscroll>
     </d-demo>
+    <d-demo :code="iscroll.showhide" href="http://output.jsbin.com/sunuzek" title="刷新" info="弹出框后显示，以及改变高度之后都要调用刷新方法重置滚动。">
+      <emfe-button @click="tipBtn">点击我出现弹出框的滚动</emfe-button>
+      <emfe-modal :show="tipShow" title="我是提示框" @close="tipClose" @cancel="tipClose" @ok="tipClose" okText="保存" :cancelFlg="false" :tip="true">
+        <div slot="modal-main">
+          <emfe-button @click="showHide">{{lang ? '隐藏' : '展开'}}不必要的内容</emfe-button>
+          <br>
+          <br>
+          <br>
+          <emfe-iscroll ref="iscroll3" class="iscroll-wrap" :options="config">
+            <div v-show="lang">
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+            </div>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <p>一些不必要的内容</p>
+            <div v-show="lang">
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+              <p>新增的很多不必要的很容</p>
+            </div>
+          </emfe-iscroll>
+        </div>
+      </emfe-modal>
+    </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
     <emfe-table class="table" :columns="propTh" :data="propTd">
@@ -74,6 +115,9 @@ export default {
   data() {
     return {
       iscroll,
+      tipShow: false,
+      tipIndex: 1,
+      lang: false,
       config: {
         scrollbars: true,
         mouseWheel: true,
@@ -212,6 +256,21 @@ export default {
       const myScroll = this.$refs.iscroll2;
       const scrollEle = myScroll.$el;
       myScroll.scrollToElement(scrollEle.querySelector('p:nth-child(11)'), null, null, true);
+    },
+    tipBtn() {
+      this.tipShow = true;
+      this.tipIndex = 3;
+    },
+    tipClose() {
+      this.tipShow = false;
+      this.tipIndex = 1;
+    },
+    showHide() {
+      this.lang = !this.lang;
+      this.refresh();
+    },
+    refresh() {
+      this.$refs.iscroll3.refresh();
     },
   },
   components: {
