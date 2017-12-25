@@ -5,9 +5,17 @@ git init
 git config --global user.name "$TRAVIS_COMMIT_USER"
 git config --global user.email "$TRAVIS_COMMIT_EMAIL"
 
-git clone --branch=gh-pages https://$GH_TOKEN@github.com:iq9891/em-fe-doc.git
+git clone --branch=gh-pages https://git@github.com:iq9891/em-fe-doc.git
+
+ls
+
+echo 1
 
 cd em-fe-doc
+
+ls
+
+echo 2
 
 rm -rf *
 
