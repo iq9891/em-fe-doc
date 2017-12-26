@@ -27,4 +27,6 @@ export default {
 </emfe-checkout>`,
   no: `
 <emfe-checkout :value="true" title="选中不可选" :checkedForever="true"></emfe-checkout>`,
+  right: `
+<emfe-checkout theme="right" title="选中不可选"></emfe-checkout>`,
 };

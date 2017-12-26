@@ -27,6 +27,9 @@
     <d-demo :code="checkout.no" href="http://output.jsbin.com/citajew" title="选中不可选" info="通过设置 checkedForever 属性。">
       <emfe-checkout :value="true" title="选中不可选" :checkedForever="true"></emfe-checkout>
     </d-demo>
+    <d-demo :code="checkout.right" href="http://output.jsbin.com/miwiki" title="多选框在右边" info="通过设置 theme 属性。 1.5.0 新增。">
+      <emfe-checkout theme="right" title="在右面的情况"></emfe-checkout>
+    </d-demo>
     <h4 class="h4">API</h4>
     <h5 class="h5">属性</h5>
     <emfe-table class="table" :columns="propTh" :data="propTd">
