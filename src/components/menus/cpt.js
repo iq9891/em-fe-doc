@@ -32,6 +32,10 @@ export default {
       router: { name: 'Transition' },
       title: 'Transition 动画',
     },
+    {
+      router: { name: 'Title' },
+      title: 'Title 标题',
+    },
   ],
   nav: [
     {

@@ -134,7 +134,7 @@ export default {
           desc: { text: '提示框出现的位置。<br>可选值为： top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end', row: false },
           type: { text: 'String', row: false },
           must: { text: 'false', row: false },
-          default: { text: '-', row: false },
+          default: { text: 'top', row: false },
         },
         {
           attr: { text: 'checkedForever', desc: false },
