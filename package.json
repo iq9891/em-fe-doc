@@ -16,7 +16,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "em-fe": "^1.2.1",
+    "em-fe": "^1.5.0",
     "em-normalize": "^1.0.2",
     "em-underline": "^1.1.1",
     "nprogress": "^0.2.0",
