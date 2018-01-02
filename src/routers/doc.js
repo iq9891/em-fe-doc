@@ -252,6 +252,11 @@ export default [
     component: loadcomponents.load('Message', 'views', '/doc'),
   },
   {
+    path: 'title',
+    name: 'Title',
+    component: loadcomponents.load('Title', 'views', '/doc'),
+  },
+  {
     path: 'formtest',
     name: 'Formtest',
     component: loadcomponents.load('Formtest', 'views', '/doc'),
@@ -260,5 +265,10 @@ export default [
     path: 'documentclick',
     name: 'Documentclick',
     component: loadcomponents.load('Documentclick', 'views', '/doc'),
+  },
+  {
+    path: 'tag',
+    name: 'Tag',
+    component: loadcomponents.load('Tag', 'views', '/doc'),
   },
 ];
