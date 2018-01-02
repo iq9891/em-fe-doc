@@ -62,6 +62,10 @@ export default {
       router: { name: 'Stepsb' },
       title: 'Stepsb 步骤指引',
     },
+    {
+      router: { name: 'Tag' },
+      title: 'Tag 标签',
+    },
   ],
   form: [
     {

@@ -266,4 +266,9 @@ export default [
     name: 'Documentclick',
     component: loadcomponents.load('Documentclick', 'views', '/doc'),
   },
+  {
+    path: 'tag',
+    name: 'Tag',
+    component: loadcomponents.load('Tag', 'views', '/doc'),
+  },
 ];
