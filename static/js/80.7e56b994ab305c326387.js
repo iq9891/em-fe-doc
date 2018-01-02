@@ -1,0 +1,1 @@
+webpackJsonp([80],{57:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={base:"\n<template>\n  <emfe-opations v-model=\"opationsData\"></emfe-opations>\n</template>\n<script>\n  export default {\n    data() {\n      return {\n        opationsData: ['1', '2', ''],\n      };\n    },\n  },\n<\/script>"}}});

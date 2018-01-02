@@ -1,0 +1,1 @@
+webpackJsonp([65],{72:function(e,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={base:"\n<emfe-title>EM-FE 的标题</emfe-title>",slot:'\n<emfe-title>\n  <emfe-link :routers="{}">EM-FE 的标题</emfe-link>\n</emfe-title>',tip:'\n<emfe-title tip="EM-FE 的提示">EM-FE 的标题</emfe-title>'}}});

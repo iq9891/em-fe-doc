@@ -1,0 +1,1 @@
+webpackJsonp([112],{26:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default={base:'\n<template>\n  <emfe-changecount :count="base"></emfe-changecount>\n</template>\n<script>\n  export default {\n    data() {\n      return {\n        base: 1998,\n      };\n    },\n  },\n<\/script>'}}});
